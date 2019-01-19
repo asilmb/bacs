@@ -1,11 +1,11 @@
 <?php
 
-namespace frontend\modules\account\controllers;
+namespace frontend\modules\baks\controllers;
 
 use Yii;
 use yii\web\Controller;
 
-class MainController extends Controller {
+class DefaultController extends Controller {
 	
 	public function actionIndex(){
 		return $this->render('index');

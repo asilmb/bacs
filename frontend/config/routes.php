@@ -1,7 +1,7 @@
 <?php
 
 return [
-	''=> 'welcome',
+	''=> 'baks',
 	
 	// ----------------- Account module -----------------
 	

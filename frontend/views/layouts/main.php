@@ -15,18 +15,17 @@ AppAsset::register($this);
 
 <div class="wrap">
     <header class="main-header">
-		<?= Page::snippet('navbar', null, ['isFixedTop' => true]) ?>
+
     </header>
     <div class="container">
-		<?= Breadcrumbs::widget() ?>
-		<?= Alert::widget() ?>
+
 		<?= $content ?>
     </div>
 </div>
 
 <div class="page-footer">
     <div class="container">
-		<?= Page::snippet('footer', '@yii2lab/applicationTemplate/common') ?>
+
     </div>
 </div>
 
