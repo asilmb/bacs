@@ -1,0 +1,129 @@
+
+September 8, 2017, 8:57 am::пусто
+September 8, 2017, 9:03 am::QLSJ63ndVrZUwY4I-uIabviAvs907WepEPdWv9Qk5K0arB7hkkIhCKeAFF5P50UGNSS4EW7Qquwu3NurNj0nwA==, Array
+September 8, 2017, 9:03 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b25cef17be1","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b25cef17be1","@institution":"stub"}}}
+September 8, 2017, 9:03 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b25cef17be1","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b25cef17be1","@institution":"stub"}}}
+September 8, 2017, 9:04 am::пусто
+September 8, 2017, 9:04 am::SASfzcfnQTmCgHZ2dhyIGdQNv1ZI_TBj2t3b9BwiWPQSHAjHLHg2h3HB7CDDGddxGam5iFLA_Sbk9lbg_jubmQ==, Array
+September 8, 2017, 9:05 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b25d3b96351","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b25d3b96351","@institution":"stub"}}}
+September 8, 2017, 9:05 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b25d3b96351","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b25d3b96351","@institution":"stub"}}}
+September 8, 2017, 9:06 am::пусто
+September 8, 2017, 9:06 am::iL7izTmPnRijd4m3sMu_m-E5PExqPcoE7ctVZd8BGpXSpnXH0hDqplA2E-EFzuDzLJ06knAAB0HT4NhxPRjZ-A==, Array
+September 8, 2017, 9:06 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b25dae7b989","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b25dae7b989","@institution":"stub"}}}
+September 8, 2017, 9:06 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b25dae7b989","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b25dae7b989","@institution":"stub"}}}
+September 8, 2017, 9:11 am::пусто
+September 8, 2017, 9:12 am::UGxWpTWb2w4WqHuF890ZXMqjo1zjpR-qShSJKtHvBJ4KdMGv3gSssOXp4dNG2EY0BwelgvmY0u90PwQ-M_bH8w==, Array
+September 8, 2017, 9:12 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b25ee0c8801","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b25ee0c8801","@institution":"stub"}}}
+September 8, 2017, 9:12 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b25ee0c8801","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b25ee0c8801","@institution":"stub"}}}
+September 8, 2017, 9:16 am::пусто
+September 8, 2017, 9:16 am::ODbsSdUFZAlAOmloJiFs9w4d46QtGhYkT9ZjLJuINGliLntDPpoTt7N78z6TJDOfw7nlejcn22Fx_e44eZH3BA==, Array
+September 8, 2017, 9:16 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b25feb062a1","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b25feb062a1","@institution":"stub"}}}
+September 8, 2017, 9:16 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b25feb062a1","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b25feb062a1","@institution":"stub"}}}
+September 8, 2017, 9:19 am::пусто
+September 8, 2017, 9:21 am::пусто
+September 8, 2017, 9:21 am::aTIn5ontaH6OGqxznjygyipGxBMll4XkqVHJHuvgBuEzKrDsYnIfwH1bNiUrOf-i5-LCzT-qSKGXekQKCfnFjA==, Array
+September 8, 2017, 9:21 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b2613633161","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b2613633161","@institution":"stub"}}}
+September 8, 2017, 9:21 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b2613633161","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b2613633161","@institution":"stub"}}}
+September 8, 2017, 9:28 am::пусто
+September 8, 2017, 9:28 am::пусто
+September 8, 2017, 9:28 am::HwePYLfNrLiCt5b3hff8KUyKccDE3t6thvVoPRVk6KlFHxhqXFLbBnH2DKEw8qNBgS53Ht7jE-i43uUp930rxA==, Array
+September 8, 2017, 9:28 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b262c2701f1","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b262c2701f1","@institution":"stub"}}}
+September 8, 2017, 9:28 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b262c2701f1","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b262c2701f1","@institution":"stub"}}}
+September 8, 2017, 9:28 am::пусто
+September 8, 2017, 9:28 am::a-TJ-uO3k0DM_9ywewhpDdhMsbrM1_barUhSIa4RuKsx_F7wCCjk_j--RubODTZlFei3ZNbqO5-TY981TAh7xg==, Array
+September 8, 2017, 9:28 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b262da45271","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b262da45271","@institution":"stub"}}}
+September 8, 2017, 9:28 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b262da45271","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b262da45271","@institution":"stub"}}}
+September 8, 2017, 9:29 am::пусто
+September 8, 2017, 9:29 am::MhDr2yvJw0ffEObNGok9yQUuFubLicIlKKXS8yTMLnJoCHzRwFa0-SxRfJuvjGKhyIoQONG0D2AWjl_nxtXtHw==, Array
+September 8, 2017, 9:29 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b262ef2a0d9","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b262ef2a0d9","@institution":"stub"}}}
+September 8, 2017, 9:29 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b262ef2a0d9","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b262ef2a0d9","@institution":"stub"}}}
+September 8, 2017, 9:30 am::пусто
+September 8, 2017, 9:30 am::пусто
+September 8, 2017, 9:30 am::пусто
+September 8, 2017, 9:30 am::OouXGfYdqtYNI58uIg2Cx36o5GxKuc6OfSF5HvspxQBgkwATHYLdaP5iBXiXCN2vswzislCEA8tDCvQKGTAGbQ==, Array
+September 8, 2017, 9:30 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b263419ec09","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":""}},"session":{"@create":true,"@id":"59b263419ec09","@institution":"stub"}}}
+September 8, 2017, 9:30 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b263419ec09","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b263419ec09","@institution":"stub"}}}
+September 8, 2017, 9:30 am::пусто
+September 8, 2017, 9:30 am::SFVrwlyWLpEEjhxjzFuYUGudXWS0Zh83jYTg4QhHxGcSTfzItwlZL_fPhjV5Xsc4pjlbuq5b0nKzr2316l4HCg==, Array
+September 8, 2017, 9:30 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b2635345a41","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":""}},"session":{"@create":true,"@id":"59b2635345a41","@institution":"stub"}}}
+September 8, 2017, 9:31 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b2635345a41","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b2635345a41","@institution":"stub"}}}
+September 8, 2017, 9:31 am::пусто
+September 8, 2017, 9:31 am::PtuvDsu8kqOcoP2FNbmQNR0C0TQUi-DwNgKQqeVcyH1kwzgEICPlHW_hZ9OAvM9d0KbX6g62LbUIKR29B0ULEA==, Array
+September 8, 2017, 9:31 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b26371037a9","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b26371037a9","@institution":"stub"}}}
+September 8, 2017, 9:31 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b26371037a9","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b26371037a9","@institution":"stub"}}}
+September 8, 2017, 9:32 am::пусто
+September 8, 2017, 9:32 am::bdsOy9W4-pJTxbreUIQCf145wmO-t5yBQIGkY-TQfPc3w5nBPieNLKCEIIjlgV0Xk53EvaSKUcR-qil3Bsm_mg==, Array
+September 8, 2017, 9:32 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b263c021439","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b263c021439","@institution":"stub"}}}
+September 8, 2017, 9:32 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b263c021439","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b263c021439","@institution":"stub"}}}
+September 8, 2017, 9:37 am::post = Array
+(
+)
+ request = 
+September 8, 2017, 9:38 am::пусто
+September 8, 2017, 9:38 am::fUPUqGwoyKDb_mVImCQno-d2z7QSPVU12bu5Q5PhKQknW0Oih7e_Hii__x4tIXjLKtLJaggAmHDnkDRXcfjqZA==, Array
+September 8, 2017, 9:38 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b2651ac8fd1","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b2651ac8fd1","@institution":"stub"}}}
+September 8, 2017, 9:38 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b2651ac8fd1","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b2651ac8fd1","@institution":"stub"}}}
+September 8, 2017, 9:40 am::пусто
+September 8, 2017, 9:40 am::-KZcmZmSif9tcNgaOcb8eN2wNt--CJ6eCX6JhKV58rOivsuTcg3-QZ4xQkyMw6MQEBQwAaQ1U9s3VQSQR2Ax3g==, Array
+September 8, 2017, 9:40 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b26580c60f1","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b26580c60f1","@institution":"stub"}}}
+September 8, 2017, 9:40 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b26580c60f1","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b26580c60f1","@institution":"stub"}}}
+September 8, 2017, 9:40 am::пусто
+September 8, 2017, 9:40 am::ndCcQ4K0yOLMYRKOWBD1XdRVtszl1hfaI3SK3pMp7hLHyAtJaSu_XD8giNjtFao1GfGwEv_r2p8dXwfKcTAtfw==, Array
+September 8, 2017, 9:40 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b2659c4b419","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b2659c4b419","@institution":"stub"}}}
+September 8, 2017, 9:40 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b2659c4b419","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b2659c4b419","@institution":"stub"}}}
+September 8, 2017, 10:34 am::Array
+(
+    [REDIRECT_STATUS] => 200
+    [HTTP_HOST] => wooppay.yii
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:55.0) Gecko/20100101 Firefox/55.0
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    [HTTP_ACCEPT_LANGUAGE] => ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate
+    [HTTP_COOKIE] => language=4d056091d4abacbae471eb0209e6212bdcad45c13077b1832c09eb9397a6724da%3A2%3A%7Bi%3A0%3Bs%3A8%3A%22language%22%3Bi%3A1%3Bs%3A5%3A%22ru-RU%22%3B%7D; advanced-frontend=nuucilgce45jh65rbvrlu6f412; _csrf-frontend=9978329044be811c91e685a72508e19ee84db98c237bdb9e7840cc443a6c757ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Z%18%97%0A%EB%9Fw%BE%F3A%9AV%B5%05_h%CD%A4%06%DE%1A%3D%CDE%3E%2B%8D%14%E2%19%C3m%22%3B%7D; 5ca9ca182ab1a0e5ab924d6e39e9e76dda0f3bdcd5e873ad45bb12bd32b4b485a%3A2%3A%7Bi%3A0%3BN%3Bi%3A1%3Bs%3A32%3A%22%7F%C0%92%FA%83%C2%D0%82%994%B1%3Bo-%83%A5H+s%D8%C9%ED%15%E3O%C80%18S%85%97%1B%22%3B%7D; XDEBUG_SESSION=WOOPPAYDEBUG; _identity-frontend=bec99dd7bcd98650437a16af284f4e37e10b1dfe2ac20463ba264ea7cc6a94f4a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A51%3A%22%5B381949%2C%22476aed09e130e1d9f5ae7899487f07f7%22%2C2592000%5D%22%3B%7D
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [PATH] => c:\openserver\modules\php\PHP-5.6\ext;c:\openserver\modules\php\PHP-5.6\pear;c:\openserver\modules\php\PHP-5.6\pear\bin;c:\openserver\modules\php\PHP-5.6;c:\openserver\modules\imagemagick;c:\openserver\modules\wget\bin;c:\openserver\modules\git;c:\openserver\modules\git\bin;c:\openserver\modules\git\mingw\bin;c:\openserver\modules\git\cmd;c:\openserver\modules\database\MySQL-5.5\bin;c:\openserver\modules\http\Apache-2.4\bin;c:\openserver\modules\http\Apache-2.4;C:\Windows\system32;C:\Windows;C:\Windows\system32\Wbem;C:\Windows\SysWOW64
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache
+    [SERVER_NAME] => wooppay.yii
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => C:/OpenServer/domains/yii2-salem/frontend/web
+    [REQUEST_SCHEME] => http
+    [CONTEXT_PREFIX] => 
+    [CONTEXT_DOCUMENT_ROOT] => C:/OpenServer/domains/yii2-salem/frontend/web
+    [SERVER_ADMIN] => [no address given]
+    [SCRIPT_FILENAME] => C:/OpenServer/domains/yii2-salem/frontend/web/index.php
+    [REMOTE_PORT] => 27099
+    [REDIRECT_URL] => /banking/parse
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => 
+    [REQUEST_URI] => /banking/parse
+    [SCRIPT_NAME] => /index.php
+    [PHP_SELF] => /index.php
+    [REQUEST_TIME_FLOAT] => 1504866844.464
+    [REQUEST_TIME] => 1504866844
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+\n\n\nArray
+(
+)
+\n\n\nArray
+(
+)
+\n\n\n\n\n\n
+September 8, 2017, 10:34 am::пусто
+September 8, 2017, 10:34 am::HZMXPnwQU7FTWzZLVNejzEAtwtPsORJljwtvF10YcUBHi4A0l48kD6AarB3h0vykjYnEDfYE3yCxIOIDvwGyLQ==, Array
+September 8, 2017, 10:34 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b27232b3bf9","@service":"salempay","auth-form":{"field":{"@id":"demo","@value":"demo"}},"session":{"@create":true,"@id":"59b27232b3bf9","@institution":"stub"}}}
+September 8, 2017, 10:34 am::{"request":{"@method":"PARSING_DATA_R","@respond-to":"http:\/\/yii2.test.wooppay.com\/banking\/parse","@rid":"59b27232b3bf9","@service":"salempay","parse":{"@type":"products"},"session":{"@create":false,"@id":"59b27232b3bf9","@institution":"stub"}}}
