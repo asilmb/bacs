@@ -165,21 +165,14 @@ return [
 			'yii2lab\app\domain\filters\config\SetAppId',
 			'yii2lab\app\domain\filters\config\SetPath',
 			'yii2lab\app\domain\filters\config\DebugModule',
-			
 			[
 				'class' => 'yii2lab\db\domain\filters\migration\SetPath',
 				'path' => [
 					'@vendor/yii2lab/yii2-geo/src/domain/migrations',
 					'@vendor/yii2lab/yii2-rest/src/domain/migrations',
 					'@vendor/yii2lab/yii2-rbac/src/domain/migrations',
-					'@vendor/yii2lab/yii2-qr/src/domain/migrations',
 					'@vendor/yii2module/yii2-account/src/domain/v2/migrations',
-					'@vendor/yii2module/yii2-profile/src/domain/v2/migrations',
-					'@vendor/yii2module/yii2-article/src/domain/migrations',
 					'@vendor/yii2module/yii2-summary/src/domain/migrations',
-					'@vendor/yii2woop/yii2-service/src/domain/v3/migrations',
-					'@vendor/yii2woop/yii2-partner/src/domain/migrations',
-					'@vendor/yii2woop/yii2-bank/src/domain/v2/migrations',
 					'@vendor/yiisoft/yii2/log/migrations',
 				],
 				'scan' => array_merge([

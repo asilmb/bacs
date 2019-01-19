@@ -1,6 +1,6 @@
 <?php
 
-namespace frontend\modules\account;
+namespace frontend\modules\baks;
 
 use yii\base\Module as YiiModule;
 
@@ -9,5 +9,5 @@ use yii\base\Module as YiiModule;
  */
 class Module extends YiiModule
 {
-	
+	public $basePath = 'main\index';
 }
