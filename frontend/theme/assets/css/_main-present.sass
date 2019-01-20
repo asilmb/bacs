@@ -1,8 +1,27 @@
 .main-present
-  width: 86%
+  width: 85%
   height: 900px
   margin: 0 auto
   display: block
+  overflow: hidden
+  .owl-nav
+    position: absolute
+    top: 46%
+    width: 100%
+    .owl-prev
+      display: inline-block
+      background: black
+      width: 50px
+      left: 40px
+    .owl-next
+      display: inline-block
+      background: black
+      width: 50px
+      right: 40px
+  .owl-carousel__item
+    img
+      max-width: 100%
+      height: auto
   .main-present_play-btn
     position: absolute
     background: url('./../images/main-present-play.png') no-repeat
@@ -23,5 +42,3 @@
       margin: 0
       font-size: 20px
       color: #a36f1b
-
-.main-present-title

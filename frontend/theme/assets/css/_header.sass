@@ -16,25 +16,31 @@
   padding-top: 32px
   &.menu-section--main-links
     .menu-section_menu-item
-      font-weight: bold
       padding: 5px
       padding-left: 0
+      a
+        font-weight: bold
+        text-transform: none
   .menu-section_menu-item
-    font-size: 18px
     padding: 10px
     padding-left: 0
-    color: #5d5d5d
     display: block
-    text-decoration: none
-    line-height: 1
-    &:active
+    a
+      text-transform: uppercase
+      line-height: 1
+      font-size: 16px
+      color: #5d5d5d
       text-decoration: none
-    &:hover
-      text-decoration: none
-      background: black
-      color: #fff
-    &:visited
-      text-decoration: none
+      &:active
+        text-decoration: none
+        background: black
+        color: #fff
+      &:hover
+        text-decoration: none
+        background: black
+        color: #fff
+      &:visited
+        text-decoration: none
 
 
 
