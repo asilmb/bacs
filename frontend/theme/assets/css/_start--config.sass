@@ -1,0 +1,64 @@
+h1, h2, h3, h4, a, p
+  font-family: myriadPro
+h1
+  font-size: 64px
+  margin-top: 6%
+  margin-bottom: 3%
+h2
+  color: #4bc68e
+  font-size: 48px
+h3
+  font-size: 24px
+  margin-bottom: 5%
+p
+  font-size: 14px
+a
+  font-size: 14px
+body
+  margin: 0
+.c_btn
+  display: inline-block
+  margin-bottom: 0
+  text-align: center
+  white-space: nowrap
+  vertical-align: middle
+  -ms-touch-action: manipulation
+  touch-action: manipulation
+  cursor: pointer
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  border: 1px solid transparent
+  border-radius: 4px
+  &:hover, :focus
+    text-decoration: none
+    opacity: 0.8
+  &:active
+    background-image: none
+    outline: 0
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+.navbar-toggle
+  background: url("./../images/menu_icon.png")  no-repeat
+  background-color: none
+  border: none
+  border-radius: 0
+  background-size: contain
+/* Desktops and laptops ----------- */
+@media only screen  and (max-width : 1224px)
+  h2
+    font-size: 32px
+@media only screen  and (max-width : 768px)
+  .navbar-toggle
+    margin-top: 5px
+    margin-right: 15px
+    margin-bottom: 25px
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 480px)
+  h2
+    font-size: 24px
+  .navbar-toggle
+    margin-top: 15px
+    margin-right: 15px
+    margin-bottom: 15px
+

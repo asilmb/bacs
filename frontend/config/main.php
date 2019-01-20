@@ -5,6 +5,9 @@ use yii2lab\app\domain\helpers\EnvService;
 return [
 	'bootstrap' => [],
 	'components' => [
+		'assetManager' => [
+			'appendTimestamp' => true,
+		],
 		'user' => [
 			'enableAutoLogin' => true,
 			'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
