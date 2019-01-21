@@ -1,0 +1,52 @@
+.owl-nav
+  position: absolute
+  top: 46%
+  width: 100%
+  .owl-prev
+    position: absolute
+    display: inline-block
+    background: url('./../images/arrow_left.png') no-repeat
+    background-size: 100% 200%
+    height: 3em
+    width: 5em
+    left: 40px
+    &:hover
+      background-position-y: 100%
+  .owl-next
+    position: absolute
+    display: inline-block
+    background: url('./../images/arrow_right.png') no-repeat
+    background-size: 100% 200%
+    right: 40px
+    height: 3em
+    width: 5em
+    &:hover
+      background-position-y: 100%
+.owl-dots
+  z-index: 100000
+  position: absolute
+  bottom: 96px
+  right: 50px
+  width: 116px
+  height: 76px
+  .owl-dot
+    background: white
+    width: 25px
+    height: 25px
+    border-radius: 400px
+    border: 1px #b68653 solid
+    margin: 5px
+    display: inline-block
+    position: relative
+    &.active
+      &:before
+        content: ""
+        width: 0
+        height: 0
+        border-left: 6px solid transparent
+        border-right: 6px solid transparent
+        border-bottom: 10px solid #b68653
+        position: absolute
+        top: 30%
+        right: 24%
+        transform: rotate(90deg)
