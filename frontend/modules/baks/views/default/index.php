@@ -6,7 +6,7 @@ $this->title = t('account/main', 'title');
 
 ?>
 
-<div class="section-main">
+<div class="section-main section">
     <div class="main-present">
         <div class="owl-carousel">
             <a class="owl-carousel__item">
@@ -35,14 +35,33 @@ $this->title = t('account/main', 'title');
                     Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                     стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
                     создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
-                    Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в
-                    электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами
-                    Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus
-                    PageMaker, в шаблонах которых используется Lorem Ipsum.
+
                 </p>
             </div>
 
         </div>
+    </div>
+</div>
+<div class="section-catalog section">
+    <div class="catalog-present">
+        <div class="catalog-left">
+            <div class="catalog-title">
+                <h2 class="catalog-title_title">КАТАЛОГ</h2>
+                <p class="catalog-title_sub-title">Заголовок, какие крутейшие товары,
+                    и качество на высоте</p>
+            </div>
+            <ul class="catalog-collections">
+                <li class="catalog-collections_item girl"><a href="#!">Женская коллекция</a></li>
+                <li class="catalog-collections_item men"><a href="#!">мужская коллекция</a></li>
+                <li class="catalog-collections_item travel"><a href="#!">путешествия</a></li>
+            </ul>
+        </div>
+        <div class="catalog-right">
+            <img src="images/collection/girl_collection.png" class="catalog-present_item girl present_item_active" >
+            <img src="images/collection/men_collection.png" class="catalog-present_item man" >
+            <img src="images/collection/girl_collection.png" class="catalog-present_item travel" >
+        </div>
+
     </div>
 </div>
 

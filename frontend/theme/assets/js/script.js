@@ -10,3 +10,21 @@ $(document).ready(function () {
     );
 
 });
+$(document).ready(function(){
+    $('.girl_collection').show();
+    $(".men").hover(function(){
+        $('.men_collection').show();
+        $('.girl_collection').hide();
+    },function(){
+        $('.men_collection').hide();
+        $('.girl_collection').show();
+    });
+    $(".travel").hover(function(){
+        $('.travel_collection').show();
+        $('.girl_collection').hide();
+    },function(){
+        $('.travel_collection').hide();
+        $('.girl_collection').show();
+    });
+
+});
