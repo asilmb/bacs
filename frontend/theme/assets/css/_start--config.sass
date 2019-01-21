@@ -14,10 +14,10 @@ p
   font-size: 14px
 a
   font-size: 14px
-
-body
+html, body, .container
+  height: 100%
+  width: 100%
   margin: 0
-
 .c_btn
   display: inline-block
   margin-bottom: 0
@@ -46,6 +46,15 @@ body
   border: none
   border-radius: 0
   background-size: contain
+.clearfix:after
+  visibility: hidden
+  display: block
+  font-size: 0
+  content: " "
+  clear: both
+  height: 0
+
+
 /* Desktops and laptops ----------- */
 @media only screen  and (max-width : 1224px)
   h2

@@ -9,10 +9,11 @@ use frontend\assets\AppAsset;
 use yii2lab\navigation\domain\widgets\Alert;
 
 AppAsset::register($this);
+
 ?>
 
 <?php Page::beginDraw() ?>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <div class="navigation-vertical navigation-vertical-left">
     <div class="navigation-vertical_logo">
@@ -34,7 +35,6 @@ AppAsset::register($this);
         <div class="menu-section_menu-item"><a href="#">Арендаторам</a></div>
     </div>
 </div>
-
 <div class="container">
     <?= $content ?>
 </div>

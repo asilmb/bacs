@@ -11,7 +11,6 @@ class AppAsset extends AssetBundle {
 	public $basePath = '@webroot';
 	public $baseUrl = '@web';
 	public $css = [
-
 		"css/owl.carousel.css",
 		"css/owl.theme.default.css",
         'css/style.min.css',

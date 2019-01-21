@@ -6,7 +6,7 @@ $this->title = t('account/main', 'title');
 
 ?>
 
-<div class="section-main section">
+<div class="section-main section clearfix">
     <div class="main-present">
         <div class="owl-carousel">
             <a class="owl-carousel__item">
@@ -42,7 +42,7 @@ $this->title = t('account/main', 'title');
         </div>
     </div>
 </div>
-<div class="section-catalog section">
+<div class="section-catalog section clearfix">
     <div class="catalog-present">
         <div class="catalog-left">
             <div class="catalog-title">
@@ -57,9 +57,9 @@ $this->title = t('account/main', 'title');
             </ul>
         </div>
         <div class="catalog-right">
-            <img src="images/collection/girl_collection.png" class="catalog-present_item girl present_item_active" >
-            <img src="images/collection/men_collection.png" class="catalog-present_item man" >
-            <img src="images/collection/girl_collection.png" class="catalog-present_item travel" >
+            <img src="images/collection/girl.png" class="catalog-present_item girl present_item_active" >
+            <img src="images/collection/men.png" class="catalog-present_item man" >
+            <img src="images/collection/girl.png" class="catalog-present_item travel" >
         </div>
 
     </div>
