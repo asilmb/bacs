@@ -44,19 +44,19 @@ $this->title = t('account/main', 'title');
 </div>
 <div class="section-catalog section clearfix">
     <div class="catalog-present">
-        <div class="catalog-left">
-            <div class="catalog-title">
-                <h2 class="catalog-title_title">КАТАЛОГ</h2>
-                <p class="catalog-title_sub-title">Заголовок, какие крутейшие товары,
+        <div class="catalog-present_area">
+            <div class="catalog-present_title">
+                <h2 class="catalog-present-title_title">КАТАЛОГ</h2>
+                <p class="catalog-present-title_sub-title">Заголовок, какие крутейшие товары,
                     и качество на высоте</p>
             </div>
-            <ul class="catalog-collections">
+            <ul class="catalog-present_collections">
                 <li class="catalog-collections_item girl"><a href="#!">Женская коллекция</a></li>
                 <li class="catalog-collections_item men"><a href="#!">мужская коллекция</a></li>
                 <li class="catalog-collections_item travel"><a href="#!">путешествия</a></li>
             </ul>
         </div>
-        <div class="catalog-right">
+        <div class="catalog-present_area">
             <img src="images/collection/girl.png" class="catalog-present_item girl present_item_active" >
             <img src="images/collection/men.png" class="catalog-present_item man" >
             <img src="images/collection/girl.png" class="catalog-present_item travel" >
