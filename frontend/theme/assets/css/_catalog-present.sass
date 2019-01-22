@@ -28,19 +28,45 @@
     text-transform: uppercase
     padding: 1em 0
     margin: 0
+
 .catalog-present-collections
-  .catalog-present-collections_item
+  .catalog-present-collections_selector
     background-position: left top
     background-repeat: no-repeat
-    padding: 10px 0
-    height: 36px
+    padding: 1em 0 0.4em 0
     color: #5d5d5d
     border-bottom: solid 1px #d8d8d8
     list-style-type: none
+    position: relative
+    &:last-child
+      border-bottom: 0
+    &:before
+      content: ''
+      width: 2.25em
+      height: 2.25em
+      position: absolute
+      left: 0
+      bottom: 1em
+    &.girl
+      &:before
+        background: url('./../images/girl.png') no-repeat
+    &.men
+      a
+        line-height: 2em
+      &:before
+        background: url('./../images/men.png') no-repeat
+    &.travel
+      &:before
+        background: url('./../images/travel.png') no-repeat
+    &:hover
+      background: black
+      &:before
+        background-position-y: -2.25em
     a
       color: #5d5d5d
       text-decoration: none
       text-transform: uppercase
-      font-size: 20px
-      line-height: 36px
+      font-size: 1.5em
+      line-height: 1.6em
       display: block
+      padding-left: 2.1em
