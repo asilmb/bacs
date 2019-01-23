@@ -64,7 +64,38 @@ $this->title = t('account/main', 'title');
 
     </div>
 </div>
-
+<div class="section-stock section clearfix">
+    <h2 class="section-stock_title">Акции</h2>
+    <div class="owl-carousel">
+        <a class="owl-carousel__item">
+            <img src="/images/main-present-background.png" alt="">
+        </a>
+        <a class="owl-carousel__item">
+            <img src="/images/main-present-background.png" alt="">
+        </a>
+        <a class="owl-carousel__item">
+            <img src="/images/main-present-background.png" alt="">
+        </a>
+        <a class="owl-carousel__item">
+            <img src="/images/main-present-background.png" alt="">
+        </a>
+        <a class="owl-carousel__item">
+            <img src="/images/main-present-background.png" alt="">
+        </a>
+        <a class="owl-carousel__item">
+            <img src="/images/main-present-background.png" alt="">
+        </a>
+        <a class="owl-carousel__item">
+            <img src="/images/main-present-background.png" alt="">
+        </a>
+        <a class="owl-carousel__item">
+            <img src="/images/main-present-background.png" alt="">
+        </a>
+        <a class="owl-carousel__item">
+            <img src="/images/main-present-background.png" alt="">
+        </a>
+    </div>
+</div>
 
 
 

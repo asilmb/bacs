@@ -2,6 +2,9 @@
   height: 55em
   display: block
   overflow: hidden
+  .owl-nav
+    position: absolute
+    top: 40%
   .owl-carousel__item
     img
       max-width: 100%
@@ -55,3 +58,55 @@
         margin: 0
         color: #5d5d5d
         font-family: RobotoLight
+
+.owl-nav
+  position: absolute
+  width: 100%
+  .owl-prev
+    position: absolute
+    display: inline-block
+    background: url('./../images/arrow_left.png') no-repeat
+    background-size: 100% 200%
+    height: 3em
+    width: 5em
+    left: 4em
+    &:hover
+      background-position-y: 100%
+  .owl-next
+    position: absolute
+    display: inline-block
+    background: url('./../images/arrow_right.png') no-repeat
+    background-size: 100% 200%
+    right: 4em
+    height: 3em
+    width: 5em
+    &:hover
+      background-position-y: 100%
+.owl-dots
+  z-index: 100000
+  position: absolute
+  bottom: 6em
+  right: 3em
+  width: 7em
+  height: 5em
+  .owl-dot
+    background: white
+    width: 1.4em
+    height: 1.4em
+    border-radius: 10em
+    border: 1px #b68653 solid
+    margin: 0.4em
+    display: inline-block
+    position: relative
+    &.active
+      &:before
+        content: ""
+        width: 0
+        height: 0
+        border-left: 6px solid transparent
+        border-right: 6px solid transparent
+        border-bottom: 10px solid #b68653
+        position: absolute
+        top: 30%
+        right: 24%
+        transform: rotate(90deg)
