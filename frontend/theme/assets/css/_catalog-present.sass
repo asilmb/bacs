@@ -1,4 +1,10 @@
 .catalog-present
+  display: flex
+  .catalog-present_comment
+    padding: 0 6em
+    p
+      font-family: RobotoLight
+      color: #5d5d5d
   .catalog-present_collections
     padding: 3em
     padding-left: 8em
@@ -13,6 +19,7 @@
     &.catalog-present_area--right
       float: right
       width: 55%
+      padding-top: 2em
 .catalog-present-title
   padding-left: 6em
   .catalog-present-title_title
@@ -28,8 +35,12 @@
     text-transform: uppercase
     padding: 1em 0
     margin: 0
-
 .catalog-present-collections
+  .catalog-present-collections_item
+    display: none
+    width: 100%
+    &.active
+      display: block
   .catalog-present-collections_selector
     background-position: left top
     background-repeat: no-repeat
@@ -38,6 +49,7 @@
     border-bottom: solid 1px #d8d8d8
     list-style-type: none
     position: relative
+
     &:last-child
       border-bottom: 0
     &:before
@@ -50,7 +62,7 @@
     &.girl
       &:before
         background: url('./../images/girl.png') no-repeat
-    &.men
+    &.man
       a
         line-height: 2em
       &:before

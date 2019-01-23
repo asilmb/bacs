@@ -11,20 +11,19 @@ $(document).ready(function () {
 
 });
 $(document).ready(function(){
-    $('.girl_collection').show();
-    $(".men").hover(function(){
-        $('.men_collection').show();
-        $('.girl_collection').hide();
-    },function(){
-        $('.men_collection').hide();
-        $('.girl_collection').show();
+
+    $(".girl").hover(function(){
+        $(".catalog-present-collections_item").removeClass("active");
+
+        $(".catalog-present-collections_item.girl").addClass('active')
+    });
+    $(".man").hover(function(){
+        $(".catalog-present-collections_item").removeClass("active");
+        $(".catalog-present-collections_item.man").addClass('active')
     });
     $(".travel").hover(function(){
-        $('.travel_collection').show();
-        $('.girl_collection').hide();
-    },function(){
-        $('.travel_collection').hide();
-        $('.girl_collection').show();
+        $(".catalog-present-collections_item").removeClass("active");
+        $(".catalog-present-collections_item.travel").addClass('active')
     });
 
 });
