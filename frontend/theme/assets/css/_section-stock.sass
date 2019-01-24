@@ -2,6 +2,17 @@
   height: 80%
   margin: 0 15em
   width: auto
+  .stock-carousel
+    .stock-carousel_item
+      height: 100%
+      &.stock-carousel_item--info
+        img
+          height: 75%
+          width: 100%
+      &.stock-carousel_item--full
+        img
+          height: 100%
+          width: 100%
   h2
     text-transform: uppercase
     font-size: 4em
@@ -14,11 +25,7 @@
         height: 100%
         .owl-item
           height: 100%
-          background: black
-          .owl-carousel__item
-            img
-              width: 100%
-              height: auto
+          background: white
   .owl-nav
     position: absolute
     top: -25%
