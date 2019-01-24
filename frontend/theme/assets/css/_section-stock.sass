@@ -4,16 +4,22 @@
   width: auto
   .stock-carousel
     .stock-carousel_item
+      position: relative
+      display: flex
+      flex-direction: column
       height: 100%
       &.stock-carousel_item--info
         .stock-carousel_item_img
-          height: 75%
           width: 100%
+        .stock-carousel_item_info
+          position: absolute
+          bottom: 0
+          background-color: #ffffff
+          flex-grow: 1
       &.stock-carousel_item--full
         .stock-carousel_item_info
           display: none
         .stock-carousel_item_img
-          height: 100%
           width: 100%
   h2
     text-transform: uppercase

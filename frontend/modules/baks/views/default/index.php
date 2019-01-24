@@ -64,38 +64,49 @@ $this->title = t('account/main', 'title');
 
     </div>
 </div>
-<div class="section-stock section clearfix">
+<div id="section-stock" class="section-stock section clearfix">
     <h2 class="section-stock_title">Акции</h2>
-    <div class="owl-carousel">
-        <a class="owl-carousel__item">
-            <img src="/images/main-present-background.png" alt="">
+    <div class="owl-carousel stock-carousel">
+        <a class="owl-carousel__item stock-carousel_item stock-carousel_item--full ">
+            <img class="stock-carousel_item_img" src="/images/main-present-background.png" alt="">
         </a>
-        <a class="owl-carousel__item">
-            <img src="/images/main-present-background.png" alt="">
+        <a class="owl-carousel__item stock-carousel_item stock-carousel_item--info ">
+            <img class="stock-carousel_item_img" src="/images/main-present-background.png" alt="">
+            <div class="stock-carousel_item_info stock-item">
+                <p class="stock-item_date">12. 05. 2019</p>
+                <h4 class="stock-item_title">Заголовок Акции</h4>
+                <p class="stock-item_describe">Новая коллекция! Kroco Из натуральной кожи.Сумка в дорогу или спорт зал также подходит для переноски, бизнес клатч и портмоне</p>
+                <div class="stock-item_more-btn"></div>
+            </div>
         </a>
-        <a class="owl-carousel__item">
-            <img src="/images/main-present-background.png" alt="">
+        <a class="owl-carousel__item stock-carousel_item stock-carousel_item--info">
+            <img class="stock-carousel_item_img" src="/images/main-present-background.png" alt="">
+            <div class="stock-carousel_item_info stock-item">
+                <p class="stock-item_date">12. 05. 2019</p>
+                <h4 class="stock-item_title">Заголовок Акции</h4>
+                <p class="stock-item_describe">Новая коллекция! Kroco Из натуральной кожи.Сумка в дорогу или спорт зал также подходит для переноски, бизнес клатч и портмоне</p>
+                <div class="stock-item_more-btn"></div>
+            </div>
         </a>
-        <a class="owl-carousel__item">
-            <img src="/images/main-present-background.png" alt="">
+        <a class="owl-carousel__item stock-carousel_item stock-carousel_item--full">
+            <img class="stock-carousel_item_img" src="/images/main-present-background.png" alt="">
         </a>
-        <a class="owl-carousel__item">
-            <img src="/images/main-present-background.png" alt="">
+        <a class="owl-carousel__item stock-carousel_item stock-carousel_item--full">
+            <img class="stock-carousel_item_img" src="/images/main-present-background.png" alt="">
         </a>
-        <a class="owl-carousel__item">
-            <img src="/images/main-present-background.png" alt="">
+        <a class="owl-carousel__item stock-carousel_item stock-carousel_item--full">
+            <img class="stock-carousel_item_img" src="/images/main-present-background.png" alt="">
         </a>
-        <a class="owl-carousel__item">
-            <img src="/images/main-present-background.png" alt="">
+        <a class="owl-carousel__item stock-carousel_item stock-carousel_item--full">
+            <img class="stock-carousel_item_img" src="/images/main-present-background.png" alt="">
         </a>
-        <a class="owl-carousel__item">
-            <img src="/images/main-present-background.png" alt="">
+        <a class="owl-carousel__item stock-carousel_item stock-carousel_item--full">
+            <img class="stock-carousel_item_img" src="/images/main-present-background.png" alt="">
         </a>
-        <a class="owl-carousel__item">
-            <img src="/images/main-present-background.png" alt="">
+        <a class="owl-carousel__item stock-carousel_item stock-carousel_item--full">
+            <img class="stock-carousel_item_img" src="/images/main-present-background.png" alt="">
         </a>
     </div>
 </div>
-
 
 
