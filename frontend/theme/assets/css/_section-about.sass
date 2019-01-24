@@ -1,0 +1,63 @@
+.section-about
+  height: auto
+  .section-about_area
+    display: flex
+    border-bottom: 1px solid #d8d8d8
+    flex-wrap: wrap
+    justify-content: center
+    .section-about_area_info
+      align-items: center
+      display: flex
+      padding: 3em 6em
+      flex-basis: 40%
+      flex-grow: 1
+      justify-content: space-around
+      .section-about_area-text
+        width: 100%
+        flex-grow: 1
+        padding-left: 5em
+        display: block
+      .section-about_area-photo
+        flex-basis: 40%
+      .section-about_area-label
+        flex-grow: 1
+        width: 300px
+        height: 237px
+.map
+  display: flex
+  height: 30em
+  flex-wrap: wrap
+  .map-contacts
+    flex-grow: 1
+    flex-basis: 40%
+    .map-contacts_info
+      background: black
+      height: 100%
+      width: 100%
+    .map-contacts_title
+      letter-spacing: 2em
+      font-size: 1em
+      text-transform: uppercase
+      padding: 1em 0 1em 5em
+      color: #5d5d5d
+      border-right: 1px solid #d8d8d8
+  .map-geo
+    flex-grow: 2
+    flex-basis: 40%
+    .map-geo_yandex
+      display: none
+      width: 100%
+      height: 100%
+      &.active
+        display: block
+.geo-cities
+  display: flex
+  .geo-cities_city
+    color: #5d5d5d
+    cursor: pointer
+    padding: 1em 5em
+    border-right: 1px solid #d8d8d8
+    &.active
+      color: #a3701c
+    &:hover
+      color: #a3701c
