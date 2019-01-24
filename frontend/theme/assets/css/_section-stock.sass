@@ -6,11 +6,13 @@
     .stock-carousel_item
       height: 100%
       &.stock-carousel_item--info
-        img
+        .stock-carousel_item_img
           height: 75%
           width: 100%
       &.stock-carousel_item--full
-        img
+        .stock-carousel_item_info
+          display: none
+        .stock-carousel_item_img
           height: 100%
           width: 100%
   h2
@@ -35,3 +37,16 @@
       right: 0
   .owl-dots
     display: none
+
+.stock-item
+  overflow: hidden
+  padding: 1em
+  .stock-item_date
+    color: #a3701c
+  .stock-item_title
+    padding: .5em 0
+  .stock-item_more-btn
+    background: url(../images/btn-more.png) no-repeat
+    height: 1.858em
+    width: 1.858em
+    margin: 0.5em 0
