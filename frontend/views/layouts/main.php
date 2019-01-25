@@ -20,7 +20,6 @@ AppAsset::register($this);
         <img src="/images/menu/logo.png">
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section">
-        <div class="navigation-vertical_logo_menu-section menu-section">
             <div class="menu-section_menu-item">
                 <a href="">
                     <p>Женская</p>
@@ -36,7 +35,7 @@ AppAsset::register($this);
             <div class="menu-section_menu-item">   <a href=" ">
                     <p>Путешествия</p>
                 </a></div>
-        </div>
+
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section menu-section--main-links">
         <div class="menu-section_menu-item"><a href="#">Акции</a></div>
