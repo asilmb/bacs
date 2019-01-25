@@ -51,18 +51,57 @@
         display: block
 .contacts
   color: #ffffff
-  padding: 3em 6em
+  padding: 3em 6em 0em
   .contacts_info
+    display: flex
+    padding-bottom: 2em
     .contacts_info-item
+      flex-grow: 1
+      border-right: 1px solid #a3701c
+      text-align: center
+      &:first-child
+        text-align: left
+      &:last-child
+        border: none
+        text-align: right
+  .contacts_add-info
+    p
+      color: #a3701c
+      font-family: RobotoBoldCondensed
+      font-size: 1.2em
   .contacts_city
+    padding-bottom: 1em
     .contacts_city-info-table
-      width: 40%
+      display: flex
+      justify-content: space-around
+      width: 100%
+      padding-bottom: .5em
     .contacts_city-name
+      color: #a3701c
+      font-weight: bold
+      font-size: 1em
+      position: relative
+      padding-bottom: 0.5em
+      &:before
+        content: ''
+        position: absolute
+        width: 1.2em
+        height: 1.2em
+        left: -2em
+        top: 0
+        background: url("/images/city_marker.png") no-repeat
     .dots
       background: url('/images/dot.gif') repeat-x bottom
+      color: white
       filter: invert(100%)
+
+      flex-grow: 2
+      .field
+          color: black
+          background: white
     .field
-      background-color: #FFFFFF
+      color: white
+      flex-grow: 1
 .geo-cities
   display: flex
   .geo-cities_city
