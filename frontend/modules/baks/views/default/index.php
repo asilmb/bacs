@@ -22,8 +22,7 @@ $this->title = t('account/main', 'title');
                 <div class="main-present_play-btn"></div>
             </a>
         </div>
-        <div class="main-present_call-btn"><p>Обратный звонок</p></div>
-        <div class="main-present_title present-title">
+          <div class="main-present_title present-title">
             <div class="present-title_title">
                 <h2>
                     ЗАГОЛОВОК СЛАЙДЕРА,
@@ -51,9 +50,9 @@ $this->title = t('account/main', 'title');
                     и качество на высоте</p>
             </div>
             <ul class="catalog-present_collections catalog-present-collections">
-                <li class="catalog-present-collections_selector girl"><a href="#!">Женская коллекция</a></li>
-                <li class="catalog-present-collections_selector man"><a href="#!">мужская коллекция</a></li>
-                <li class="catalog-present-collections_selector travel"><a href="#!">путешествия</a></li>
+                <li class="catalog-present-collections_selector-wrapper"><a href="#!" class="catalog-present-collections_selector girl">Женская коллекция</a></li>
+                <li class="catalog-present-collections_selector-wrapper"><a href="#!" class="catalog-present-collections_selector man">мужская коллекция</a></li>
+                <li class="catalog-present-collections_selector-wrapper"><a href="#!" class="catalog-present-collections_selector travel">путешествия</a></li>
             </ul>
             <div class="catalog-present_comment">
                 <p>
@@ -67,7 +66,7 @@ $this->title = t('account/main', 'title');
         <div class="catalog-present_area catalog-present_area--right catalog-present-collections">
             <img src="images/collections/girl_collection.png" class="catalog-present-collections_item girl active">
             <img src="images/collections/men_collection.png" class="catalog-present-collections_item man">
-            <img src="images/collections/girl_collection.png" class="catalog-present-collections_item travel">
+            <img src="images/collections/travel_collection.png" class="catalog-present-collections_item travel">
         </div>
 
     </div>

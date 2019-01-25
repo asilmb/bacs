@@ -9,10 +9,10 @@
       color: #5d5d5d
   .catalog-present_collections
     padding: 3em
-    padding-left: 8em
+    padding-left: 0
     margin: 0
     display: inline-block
-    width: 25em
+    width: 30em
   .catalog-present_area
     height: 100%
     &.catalog-present_area--left
@@ -38,47 +38,54 @@
 .catalog-present-collections
   .catalog-present-collections_item
     display: none
-    width: 100%
+    width: 90%
     &.active
       display: block
-  .catalog-present-collections_selector
+  .catalog-present-collections_selector-wrapper
     background-position: left top
     background-repeat: no-repeat
-    padding: 1em 0 0.4em 0
     color: #5d5d5d
-    border-bottom: solid 1px #d8d8d8
     list-style-type: none
     position: relative
-
+    padding-left: 8em
     &:last-child
       border-bottom: 0
-    &:before
-      content: ''
-      width: 2.25em
-      height: 2.25em
-      position: absolute
-      left: 0
-      bottom: 1em
-    &.girl
-      &:before
-        background: url('./../images/girl.png') no-repeat
-    &.man
-      a
-        line-height: 2em
-      &:before
-        background: url('./../images/men.png') no-repeat
-    &.travel
-      &:before
-        background: url('./../images/travel.png') no-repeat
     &:hover
       background: black
-      &:before
-        background-position-y: -2.25em
-    a
+      .catalog-present-collections_selector
+        color: #FFF
+        border-bottom: solid 1px black
+        &:before
+          background-position-y: -2.25em
+    .catalog-present-collections_selector
+      border-bottom: solid 1px #d8d8d8
       color: #5d5d5d
       text-decoration: none
       text-transform: uppercase
       font-size: 1.5em
-      line-height: 1.6em
+      line-height: 2em
       display: block
-      padding-left: 2.1em
+      padding: 0.4em 0 .4em 2.1em
+      &:before
+        content: ''
+        width: 1.5em
+        height: 1.5em
+        position: absolute
+        left: 5.5em
+        bottom: 0.8em
+        overflow: hidden
+      &.girl
+        &:before
+          background: url('./../images/girl.png') no-repeat
+      &.man
+        a
+          line-height: 2em
+        &:before
+          background: url('./../images/men.png') no-repeat
+      &.travel
+        &:before
+          background: url('./../images/travel.png') no-repeat
+      &:hover
+        &:before
+          background-position-y: -1.5em
+

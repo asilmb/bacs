@@ -20,8 +20,8 @@ AppAsset::register($this);
         <img src="/images/menu/logo.png">
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section">
-        <div class="menu-section_menu-item"><a href="#">Женская коллекция</a></div>
-        <div class="menu-section_menu-item"><a href="#">Мужская коллекция</a></div>
+        <div class="menu-section_menu-item"><a href="#">Женская</a> <a href="#">коллекция</a></div>
+        <div class="menu-section_menu-item"><a href="#">Мужская</a><a href="#">коллекция</a></div>
         <div class="menu-section_menu-item"><a href="#">Путешествия</a></div>
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section menu-section--main-links">
