@@ -1,28 +1,23 @@
-.social-section
-  position: absolute
-  top: 20px
-  left: 0
-  right: 0
-  width: 20px
-  height: 500px
-  margin: auto
-  .social-section-item
-    width: 30px
-    height: 30px
-    display: block
-    padding-top: 20px
-    &.facebook
-      background: url('./../images/menu/facebook.png') no-repeat
-    &.inst
-      background: url('./../images/menu/instagram.png') no-repeat
-    &.vk
-      background: url('./../images/menu/vk.png') no-repeat
-.navigation-vertical_footer
-  position: absolute
-  top: 0
-  bottom: 0
-  left: 0
-  right: 0
-  width: 20px
-  height: 500px
-  margin: auto
+.navigation-vertical-right
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-top: 2em
+  .social-section
+    flex-grow: 1
+    width: 2em
+
+    .social-section-item
+      width: 30px
+      height: 30px
+      display: block
+      padding-top: 20px
+      &.facebook
+        background: url('./../images/menu/facebook.png') no-repeat
+      &.inst
+        background: url('./../images/menu/instagram.png') no-repeat
+      &.vk
+        background: url('./../images/menu/vk.png') no-repeat
+  .navigation-vertical_footer
+    flex-grow: 2
+    width: 2em
