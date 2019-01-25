@@ -50,23 +50,9 @@ $this->title = t('account/main', 'title');
                     и качество на высоте</p>
             </div>
             <ul class="catalog-present_collections catalog-present-collections">
-                <div class="navigation-vertical_logo_menu-section menu-section">
-                    <div class="menu-section_menu-item">
-                        <a href="#">
-                            <p>Женская</p>
-                            <p>коллекция</p>
-                        </a>
-                    </div>
-                    <div class="menu-section_menu-item">
-                        <a href="#">
-                            <p>Мужская</p>
-                            <p>коллекция</p>
-                        </a>
-                    </div>
-                    <div class="menu-section_menu-item">   <a href="#">
-                            <p>Путешествия</p>
-                        </a></div>
-                </div>
+                <li class="catalog-present-collections_selector-wrapper"><a href="#!" class="catalog-present-collections_selector girl">Женская коллекция</a></li>
+                <li class="catalog-present-collections_selector-wrapper"><a href="#!" class="catalog-present-collections_selector man">мужская коллекция</a></li>
+                <li class="catalog-present-collections_selector-wrapper"><a href="#!" class="catalog-present-collections_selector travel">путешествия</a></li>
             </ul>
             <div class="catalog-present_comment">
                 <p>
