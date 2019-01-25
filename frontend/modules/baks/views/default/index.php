@@ -52,18 +52,18 @@ $this->title = t('account/main', 'title');
             <ul class="catalog-present_collections catalog-present-collections">
                 <div class="navigation-vertical_logo_menu-section menu-section">
                     <div class="menu-section_menu-item">
-                        <a href="">
+                        <a href="#">
                             <p>Женская</p>
                             <p>коллекция</p>
                         </a>
                     </div>
                     <div class="menu-section_menu-item">
-                        <a href=" ">
+                        <a href="#">
                             <p>Мужская</p>
                             <p>коллекция</p>
                         </a>
                     </div>
-                    <div class="menu-section_menu-item">   <a href=" ">
+                    <div class="menu-section_menu-item">   <a href="#">
                             <p>Путешествия</p>
                         </a></div>
                 </div>
