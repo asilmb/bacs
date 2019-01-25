@@ -43,3 +43,20 @@ $(document).ready(function(){
     });
 
 });
+$(document).ready(function(){
+    $(".astana").click(function(){
+        $(".geo-cities_city").removeClass("active");
+        $(".map-geo_yandex").removeClass("active");
+
+        $(".geo-cities_city.astana").addClass('active');
+        $(".map-geo_yandex.astana").addClass('active');
+    });
+    $(".karagandy").click(function(){
+        $(".geo-cities_city").removeClass("active");
+        $(".map-geo_yandex").removeClass('active');
+
+        $(".geo-cities_city.karagandy").addClass('active');
+        $(".map-geo_yandex.karagandy").addClass('active');
+    });
+
+});
