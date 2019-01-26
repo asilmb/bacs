@@ -47,5 +47,50 @@
         background: black
         color: white
         &:before
-          background-position-y: -1.5em
+          background-position-y: -1.5
+.custom-catalog
+  height: 60%
+  width: 70%
+  padding-top: 2em
+  .custom-catalog_desc
+    font-family: RobotoLight
+    .custom-catalog_view
+.catalog-view
+  padding-top: 5em
+  .owl-nav
+    position: absolute
+    top: 45%
+    .owl-prev
+      left: -9em
+    .owl-next
+      right: -9em
 
+  .owl-dots
+    display: flex
+    justify-content: center
+    counter-reset: dots
+    position: absolute
+    top: 2em
+    width: 100%
+    .owl-dot
+      &:before
+        counter-increment: dots
+        content: counter(dots)
+        padding: 6px 2px
+      &.active
+        &:before
+          background: black
+          color: white
+          font-size: 1.3em
+          line-height: .8
+  .catalog-view_item
+    .catalog-view_item_img-wrapper
+      height: 70%
+      width: 100%
+      img
+        height: 100%
+        width: 100%
+    .catalog-view_item_info
+.view-info
+  .view-info_title
+  .view-info_describe

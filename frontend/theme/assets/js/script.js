@@ -26,6 +26,24 @@ $(document).ready(function () {
             }
         }
     );
+    $(".catalog-views .owl-carousel").owlCarousel({
+            navText: ["",""],
+            loop:true,
+            margin: 10,
+            nav:true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1480: {
+                    items: 3
+                },
+            }
+        }
+    );
 });
 $(document).ready(function(){
 
