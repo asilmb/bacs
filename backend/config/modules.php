@@ -4,13 +4,13 @@ use common\enums\rbac\PermissionEnum;
 use yii2lab\extension\web\helpers\Behavior;
 
 return [
-	'vendor' => 'yii2module\vendor\admin\Module',
-	'service' => 'yii2woop\service\admin\Module',
+//	'vendor' => 'yii2module\vendor\admin\Module',
+//	'service' => 'yii2woop\service\admin\Module',
 	'error' => 'yii2module\error\module\Module',
-	'notify' => 'yii2lab\notify\admin\Module',
+//	'notify' => 'yii2lab\notify\admin\Module',
 	'user' => 'yii2module\account\module\BackendModule',
 	'offline' => 'yii2module\offline\admin\Module',
-	'rbac' => \yii2lab\rbac\admin\helpers\ModuleHelper::config(),
+//	'rbac' => \yii2lab\rbac\admin\helpers\ModuleHelper::config(),
 	'dashboard' => [
 		'class' => 'yii2module\dashboard\admin\Module',
 		'log' => [
@@ -50,10 +50,10 @@ return [
 		],
 		'as access' => Behavior::access(PermissionEnum::LOGREADER_MANAGE),
 	],*/
-	'logreader' => [
-		'class' => 'alyanik\viewlog\Module',
-		'as access' => Behavior::access(PermissionEnum::LOGREADER_MANAGE),
-	],
+//	'logreader' => [
+//		'class' => 'alyanik\viewlog\Module',
+//		'as access' => Behavior::access(PermissionEnum::LOGREADER_MANAGE),
+//	],
 	/*'app' => [
 		'class' => 'yii2lab\app\admin\Module',
 		'as access' => Behavior::access(PermissionEnum::APP_CONFIG),
