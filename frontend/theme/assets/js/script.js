@@ -46,16 +46,15 @@ $(document).ready(function () {
     );
 });
 $(document).ready(function(){
-
-    $(".girl").hover(function(){
+    $(".catalog-present-collections_selector.girl").hover(function(){
         $(".catalog-present-collections_item").removeClass("active");
         $(".catalog-present-collections_item.girl").addClass('active')
     });
-    $(".man").hover(function(){
+    $(".catalog-present-collections_selector.man").hover(function(){
         $(".catalog-present-collections_item").removeClass("active");
         $(".catalog-present-collections_item.man").addClass('active')
     });
-    $(".travel").hover(function(){
+    $(".catalog-present-collections_selector.travel").hover(function(){
         $(".catalog-present-collections_item").removeClass("active");
         $(".catalog-present-collections_item.travel").addClass('active')
     });
@@ -76,6 +75,8 @@ $(document).ready(function(){
     });
 
     $(".girl").click(function(){
+
+        $(".catalog-views").addClass("active");
         $(".catalog-present").removeClass("active");
         $(".catalog-views_close-btn").addClass('active')
         $(".views_navigator_selector").removeClass("active");
@@ -84,6 +85,7 @@ $(document).ready(function(){
         $(".custom-catalog.catalog-women").addClass('active')
     });
     $(".man").click(function(){
+        $(".catalog-views").addClass("active");
         $(".catalog-present").removeClass("active");
         $(".catalog-views_close-btn").addClass('active')
         $(".views_navigator_selector").removeClass("active");
@@ -92,6 +94,7 @@ $(document).ready(function(){
         $(".custom-catalog.catalog-man").addClass('active')
     });
     $(".travel").click(function(){
+        $(".catalog-views").addClass("active");
         $(".catalog-present").removeClass("active");
         $(".catalog-views_close-btn").addClass('active')
         $(".views_navigator_selector").removeClass("active");
@@ -100,6 +103,7 @@ $(document).ready(function(){
         $(".custom-catalog.catalog-travel").addClass('active')
     });
     $(".catalog-views_close-btn").click(function(){
+        $(".catalog-views").removeClass("active");
         $(".catalog-views_close-btn").removeClass('active');
         $(".custom-catalog").removeClass("active");
         $(".catalog-present").addClass('active')

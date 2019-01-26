@@ -8,7 +8,7 @@ $this->title = t('account/main', 'title');
 
 <div class="section-main section clearfix">
     <div class="main-present">
-        <div class="owl-carousel">
+        <div class="owl-carousel owl-round-pagination">
             <a class="owl-carousel__item">
                 <img src="/images/main-present-background.png" alt="">
                 <div class="main-present_play-btn"></div>
@@ -32,17 +32,16 @@ $this->title = t('account/main', 'title');
             <div class="present-title_sub-title">
                 <p>
                     Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                    стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
+                    стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
+                    печатник
                     создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
-
                 </p>
             </div>
-
         </div>
     </div>
 </div>
 <div class="section-catalog section clearfix">
-    <div class="catalog-present">
+    <div class="catalog-present active">
         <div class="catalog-present_area catalog-present_area--left">
             <div class="catalog-present_title catalog-present-title">
                 <h2 class="catalog-present-title_title">КАТАЛОГ</h2>
@@ -50,8 +49,9 @@ $this->title = t('account/main', 'title');
                     и качество на высоте</p>
             </div>
             <ul class="catalog-present_collections catalog-present-collections">
-                <li class="catalog-present-collections_selector-wrapper"><a href="#!"
-                                                                            class="catalog-present-collections_selector girl">Женская
+                <li class="catalog-present-collections_selector-wrapper">
+                    <a href="#!"
+                       class="catalog-present-collections_selector girl">Женская
                         коллекция</a></li>
                 <li class="catalog-present-collections_selector-wrapper"><a href="#!"
                                                                             class="catalog-present-collections_selector man">мужская
@@ -75,6 +75,318 @@ $this->title = t('account/main', 'title');
             <img src="images/collections/travel_collection.png" class="catalog-present-collections_item travel">
         </div>
 
+    </div>
+    <div class="catalog-views ">
+        <h2 class="catalog-views_title">КАТАЛОГ</h2>
+        <div class="catalog-views_navigator views_navigator">
+            <a href="#!" class="views_navigator_selector girl active">
+                Женская коллекция
+            </a>
+            <a href="#!" class="views_navigator_selector man">
+                мужская коллекция
+            </a>
+            <a href="#!" class="views_navigator_selector travel">
+                путешествия
+            </a>
+        </div>
+        <div class="catalog-women custom-catalog ">
+            <p class="custom-catalog_desc">Краткое описание под каждую коллекцию.Lorem Ipsum - это текст-"рыба",
+                часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+                латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и
+                форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+            <div class="owl-carousel custom-catalog_view catalog-view">
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/woman_catalog/temp1.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <p class="view-info_describe">Портфель мягкий с двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Бренд:</span> мягкий с
+                            двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Цвет:</span>
+                            темно-коричневый</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Страна бренда:</span>
+                            Турция</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Производитель:</span>
+                            AKA DERI by BAKS</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Коллекция:</span>
+                            Classic Dark Brown</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Состав:</span>натуральная
+                            кожа</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Размер:</span>А 4</p>
+                        <p class="view-info_price"> 64 130 тг.</p>
+
+                    </div>
+                </a>
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/woman_catalog/temp1.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <p class="view-info_describe">Портфель мягкий с двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Бренд:</span> мягкий с
+                            двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Цвет:</span>
+                            темно-коричневый</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Страна бренда:</span>
+                            Турция</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Производитель:</span>
+                            AKA DERI by BAKS</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Коллекция:</span>
+                            Classic Dark Brown</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Состав:</span>натуральная
+                            кожа</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Размер:</span>А 4</p>
+                        <p class="view-info_price"> 64 130 тг.</p>
+
+                    </div>
+                </a>
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/woman_catalog/temp1.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <p class="view-info_describe">Портфель мягкий с двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Бренд:</span> мягкий с
+                            двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Цвет:</span>
+                            темно-коричневый</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Страна бренда:</span>
+                            Турция</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Производитель:</span>
+                            AKA DERI by BAKS</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Коллекция:</span>
+                            Classic Dark Brown</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Состав:</span>натуральная
+                            кожа</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Размер:</span>А 4</p>
+                        <p class="view-info_price"> 64 130 тг.</p>
+
+                    </div>
+                </a>
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/main-present-background.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <h4 class="view-info_title">Заголовок Акции</h4>
+                        <p class="view-info_describe">Новая коллекция! Kroco Из натуральной кожи.Сумка в дорогу или
+                            спорт
+                            зал также подходит для переноски, бизнес клатч и портмоне</p>
+                    </div>
+                </a>
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/main-present-background.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <h4 class="view-info_title">Заголовок Акции</h4>
+                        <p class="view-info_describe">Новая коллекция! Kroco Из натуральной кожи.Сумка в дорогу или
+                            спорт
+                            зал также подходит для переноски, бизнес клатч и портмоне</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="catalog-man custom-catalog">
+            <p class="custom-catalog_desc">Краткое описание под каждую коллекцию.Lorem Ipsum - это текст-"рыба",
+                часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+                латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и
+                форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+            <div class="owl-carousel custom-catalog_view catalog-view">
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/woman_catalog/temp2.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <p class="view-info_describe">Портфель мягкий с двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Бренд:</span> мягкий с
+                            двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Цвет:</span>
+                            темно-коричневый</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Страна бренда:</span>
+                            Турция</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Производитель:</span>
+                            AKA DERI by BAKS</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Коллекция:</span>
+                            Classic Dark Brown</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Состав:</span>натуральная
+                            кожа</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Размер:</span>А 4</p>
+                        <p class="view-info_price"> 64 130 тг.</p>
+
+                    </div>
+                </a>
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/woman_catalog/temp2.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <p class="view-info_describe">Портфель мягкий с двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Бренд:</span> мягкий с
+                            двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Цвет:</span>
+                            темно-коричневый</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Страна бренда:</span>
+                            Турция</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Производитель:</span>
+                            AKA DERI by BAKS</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Коллекция:</span>
+                            Classic Dark Brown</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Состав:</span>натуральная
+                            кожа</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Размер:</span>А 4</p>
+                        <p class="view-info_price"> 64 130 тг.</p>
+
+                    </div>
+                </a>
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/woman_catalog/temp2.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <p class="view-info_describe">Портфель мягкий с двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Бренд:</span> мягкий с
+                            двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Цвет:</span>
+                            темно-коричневый</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Страна бренда:</span>
+                            Турция</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Производитель:</span>
+                            AKA DERI by BAKS</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Коллекция:</span>
+                            Classic Dark Brown</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Состав:</span>натуральная
+                            кожа</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Размер:</span>А 4</p>
+                        <p class="view-info_price"> 64 130 тг.</p>
+
+                    </div>
+                </a>
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/main-present-background.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <h4 class="view-info_title">Заголовок Акции</h4>
+                        <p class="view-info_describe">Новая коллекция! Kroco Из натуральной кожи.Сумка в дорогу или
+                            спорт
+                            зал также подходит для переноски, бизнес клатч и портмоне</p>
+                    </div>
+                </a>
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/main-present-background.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <h4 class="view-info_title">Заголовок Акции</h4>
+                        <p class="view-info_describe">Новая коллекция! Kroco Из натуральной кожи.Сумка в дорогу или
+                            спорт
+                            зал также подходит для переноски, бизнес клатч и портмоне</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="catalog-travel custom-catalog">
+            <p class="custom-catalog_desc">Краткое описание под каждую коллекцию.Lorem Ipsum - это текст-"рыба",
+                часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+                латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и
+                форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+            <div class="owl-carousel custom-catalog_view catalog-view">
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/woman_catalog/temp3.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <p class="view-info_describe">Портфель мягкий с двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Бренд:</span> мягкий с
+                            двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Цвет:</span>
+                            темно-коричневый</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Страна бренда:</span>
+                            Турция</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Производитель:</span>
+                            AKA DERI by BAKS</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Коллекция:</span>
+                            Classic Dark Brown</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Состав:</span>натуральная
+                            кожа</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Размер:</span>А 4</p>
+                        <p class="view-info_price"> 64 130 тг.</p>
+
+                    </div>
+                </a>
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/woman_catalog/temp3.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <p class="view-info_describe">Портфель мягкий с двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Бренд:</span> мягкий с
+                            двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Цвет:</span>
+                            темно-коричневый</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Страна бренда:</span>
+                            Турция</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Производитель:</span>
+                            AKA DERI by BAKS</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Коллекция:</span>
+                            Classic Dark Brown</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Состав:</span>натуральная
+                            кожа</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Размер:</span>А 4</p>
+                        <p class="view-info_price"> 64 130 тг.</p>
+
+                    </div>
+                </a>
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/woman_catalog/temp3.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <p class="view-info_describe">Портфель мягкий с двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Бренд:</span> мягкий с
+                            двумя карманами</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Цвет:</span>
+                            темно-коричневый</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Страна бренда:</span>
+                            Турция</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Производитель:</span>
+                            AKA DERI by BAKS</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Коллекция:</span>
+                            Classic Dark Brown</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Состав:</span>натуральная
+                            кожа</p>
+                        <p class="view-info_describe"><span class="view-info_describe-name">Размер:</span>А 4</p>
+                        <p class="view-info_price"> 64 130 тг.</p>
+
+                    </div>
+                </a>
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/main-present-background.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <h4 class="view-info_title">Заголовок Акции</h4>
+                        <p class="view-info_describe">Новая коллекция! Kroco Из натуральной кожи.Сумка в дорогу или
+                            спорт
+                            зал также подходит для переноски, бизнес клатч и портмоне</p>
+                    </div>
+                </a>
+                <a class="owl-carousel__item catalog-view_item ">
+                    <div class="catalog-view_item_img-wrapper">
+                        <img src="/images/main-present-background.png" alt="">
+                    </div>
+                    <div class="catalog-view_item_info view-info">
+                        <h4 class="view-info_title">Заголовок Акции</h4>
+                        <p class="view-info_describe">Новая коллекция! Kroco Из натуральной кожи.Сумка в дорогу или
+                            спорт
+                            зал также подходит для переноски, бизнес клатч и портмоне</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="catalog-views_close-btn"><p>Закрыть </p><span class="close"></span></div>
     </div>
 </div>
 <div id="section-stock" class="section-stock section clearfix">
@@ -228,6 +540,7 @@ $this->title = t('account/main', 'title');
                     <p>Жалобы и Предложения принимаются на Bags_accessorize@mail.ru</p>
                 </div>
             </div>
+
 
         </div>
         <div class="map-geo">
