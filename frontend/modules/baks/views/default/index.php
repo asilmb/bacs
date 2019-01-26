@@ -22,7 +22,7 @@ $this->title = t('account/main', 'title');
                 <div class="main-present_play-btn"></div>
             </a>
         </div>
-          <div class="main-present_title present-title">
+        <div class="main-present_title present-title">
             <div class="present-title_title">
                 <h2>
                     ЗАГОЛОВОК СЛАЙДЕРА,
@@ -50,9 +50,15 @@ $this->title = t('account/main', 'title');
                     и качество на высоте</p>
             </div>
             <ul class="catalog-present_collections catalog-present-collections">
-                <li class="catalog-present-collections_selector-wrapper"><a href="#!" class="catalog-present-collections_selector girl">Женская коллекция</a></li>
-                <li class="catalog-present-collections_selector-wrapper"><a href="#!" class="catalog-present-collections_selector man">мужская коллекция</a></li>
-                <li class="catalog-present-collections_selector-wrapper"><a href="#!" class="catalog-present-collections_selector travel">путешествия</a></li>
+                <li class="catalog-present-collections_selector-wrapper"><a href="#!"
+                                                                            class="catalog-present-collections_selector girl">Женская
+                        коллекция</a></li>
+                <li class="catalog-present-collections_selector-wrapper"><a href="#!"
+                                                                            class="catalog-present-collections_selector man">мужская
+                        коллекция</a></li>
+                <li class="catalog-present-collections_selector-wrapper"><a href="#!"
+                                                                            class="catalog-present-collections_selector travel">путешествия</a>
+                </li>
             </ul>
             <div class="catalog-present_comment">
                 <p>
@@ -149,65 +155,72 @@ $this->title = t('account/main', 'title');
                 <div class="contacts_city">
                     <p class="contacts_city-name">г.Астана:</p>
                     <div class="contacts_city-info-table">
+
+                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
+                            2 этаж</p>
                         <div class="dots">
-                                    <span class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-2 этаж</span>
                         </div>
-                        <span class="field">тел +7(7172)79-09-49</span>
+                        <p class="field">тел +7(7172)79-09-49</p>
 
                     </div>
                 </div>
                 <div class="contacts_city">
                     <p class="contacts_city-name">г.Астана:</p>
                     <div class="contacts_city-info-table">
+
+                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
+                            2 этаж</p>
                         <div class="dots">
-                                    <span class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-2 этаж</span>
                         </div>
-                        <span class="field">тел +7(7172)79-09-49</span>
+                        <p class="field">тел +7(7172)79-09-49</p>
 
                     </div>
                     <div class="contacts_city-info-table">
+
+                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
+                            2 этаж</p>
                         <div class="dots">
-                                    <span class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-2 этаж</span>
                         </div>
-                        <span class="field">тел +7(7172)79-09-49</span>
+                        <p class="field">тел +7(7172)79-09-49</p>
 
                     </div>
                     <div class="contacts_city-info-table">
+
+                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
+                            2 этаж</p>
                         <div class="dots">
-                                    <span class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-2 этаж</span>
                         </div>
-                        <span class="field">тел +7(7172)79-09-49</span>
+                        <p class="field">тел +7(7172)79-09-49</p>
 
                     </div>
                     <div class="contacts_city-info-table">
+
+                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
+                            2 этаж</p>
                         <div class="dots">
-                                    <span class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-2 этаж</span>
                         </div>
-                        <span class="field">тел +7(7172)79-09-49</span>
+                        <p class="field">тел +7(7172)79-09-49</p>
 
                     </div>
                     <div class="contacts_city-info-table">
+
+                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
+                            2 этаж</p>
                         <div class="dots">
-                                    <span class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-2 этаж</span>
                         </div>
-                        <span class="field">тел +7(7172)79-09-49</span>
+                        <p class="field">тел +7(7172)79-09-49</p>
 
                     </div>
                 </div>
                 <div class="contacts_city">
                     <p class="contacts_city-name">г.Астана:</p>
                     <div class="contacts_city-info-table">
+
+                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
+                            2 этаж</p>
                         <div class="dots">
-                                    <span class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-2 этаж</span>
                         </div>
-                        <span class="field">тел +7(7172)79-09-49</span>
+                        <p class="field">тел +7(7172)79-09-49</p>
 
                     </div>
                 </div>
@@ -216,7 +229,6 @@ $this->title = t('account/main', 'title');
                 </div>
             </div>
 
-
         </div>
         <div class="map-geo">
             <div class="map-geo_cities geo-cities">
@@ -224,7 +236,8 @@ $this->title = t('account/main', 'title');
                 <p class="geo-cities_city karagandy">Караганда</p>
             </div>
             <div class="map-geo_yandex astana active">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A17c948431434ecbbbd226801c0c59555f782932e7e704a2a444dc78dc85aab08&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A17c948431434ecbbbd226801c0c59555f782932e7e704a2a444dc78dc85aab08&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
             <div class="map-geo_yandex karagandy">
                 <script type="text/javascript" charset="utf-8" async
