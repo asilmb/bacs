@@ -2,6 +2,17 @@
   display: flex
   align-items: center
   flex-direction: column
+  .catalog-views_close-btn
+    position: absolute
+    top: 3em
+    right: 6em
+    display: none
+    padding: 2px
+    &:hover
+      background: black
+      color: white
+    &.active
+      display: flex
   .catalog-views_title
     color: #5d5d5d
     letter-spacing: 2.5em
@@ -43,15 +54,23 @@
       &.travel
         &:before
           background: url('./../images/travel.png') no-repeat
-      &:hover
+      &:hover, &.active
         background: black
         color: white
         &:before
           background-position-y: -1.5
 .custom-catalog
-  height: 60%
-  width: 70%
+  position: absolute
+  bottom: -10000
+  width: 65%
   padding-top: 2em
+  height: 0
+  opacity: 0
+  &.active
+    height: 60%
+    opacity: 1
+    position: relative
+    bottom: 0
   .custom-catalog_desc
     font-family: RobotoLight
     .custom-catalog_view
@@ -61,10 +80,9 @@
     position: absolute
     top: 45%
     .owl-prev
-      left: -9em
+      left: -11em
     .owl-next
-      right: -9em
-
+      right: -11em
   .owl-dots
     display: flex
     justify-content: center
@@ -92,5 +110,40 @@
         width: 100%
     .catalog-view_item_info
 .view-info
+  text-align: center
+  padding-top: 2em
   .view-info_title
   .view-info_describe
+    .view-info_describe-name
+      font-weight: bold
+      font-family: "Roboto Medium"
+    font-family: RobotoLight
+  .view-info_price
+    color: #a3701c
+    font-weight: bold
+    font-size: 1em
+    padding-top: 0.5em
+.close
+  position: relative
+  display: inline-block
+  width: 1em
+  height: 1em
+  overflow: hidden
+  margin-left: 0.5em
+  &:hover
+    &::before, &:after
+      background: blue
+  &:before, &:after
+    content: ''
+    position: absolute
+    height: 1px
+    width: 100%
+    top: 50%
+    left: 0
+
+    background: #a3701c
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(-45deg)
+

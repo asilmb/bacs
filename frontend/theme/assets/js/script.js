@@ -29,7 +29,7 @@ $(document).ready(function () {
     $(".catalog-views .owl-carousel").owlCarousel({
             navText: ["",""],
             loop:true,
-            margin: 10,
+            margin: 20,
             nav:true,
             responsive: {
                 0: {
@@ -60,8 +60,6 @@ $(document).ready(function(){
         $(".catalog-present-collections_item.travel").addClass('active')
     });
 
-});
-$(document).ready(function(){
     $(".astana").click(function(){
         $(".geo-cities_city").removeClass("active");
         $(".map-geo_yandex").removeClass("active");
@@ -77,4 +75,33 @@ $(document).ready(function(){
         $(".map-geo_yandex.karagandy").addClass('active');
     });
 
+    $(".girl").click(function(){
+        $(".catalog-present").removeClass("active");
+        $(".catalog-views_close-btn").addClass('active')
+        $(".views_navigator_selector").removeClass("active");
+        $(".views_navigator_selector.girl").addClass('active');
+        $(".custom-catalog").removeClass("active");
+        $(".custom-catalog.catalog-women").addClass('active')
+    });
+    $(".man").click(function(){
+        $(".catalog-present").removeClass("active");
+        $(".catalog-views_close-btn").addClass('active')
+        $(".views_navigator_selector").removeClass("active");
+        $(".views_navigator_selector.man").addClass('active');
+        $(".custom-catalog").removeClass("active");
+        $(".custom-catalog.catalog-man").addClass('active')
+    });
+    $(".travel").click(function(){
+        $(".catalog-present").removeClass("active");
+        $(".catalog-views_close-btn").addClass('active')
+        $(".views_navigator_selector").removeClass("active");
+        $(".views_navigator_selector.travel").addClass('active');
+        $(".custom-catalog").removeClass("active");
+        $(".custom-catalog.catalog-travel").addClass('active')
+    });
+    $(".catalog-views_close-btn").click(function(){
+        $(".catalog-views_close-btn").removeClass('active');
+        $(".custom-catalog").removeClass("active");
+        $(".catalog-present").addClass('active')
+    });
 });
