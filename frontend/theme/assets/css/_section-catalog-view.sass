@@ -1,0 +1,51 @@
+.catalog-views
+  display: flex
+  align-items: center
+  flex-direction: column
+  .catalog-views_title
+    color: #5d5d5d
+    letter-spacing: 2.5em
+    font-size: 2em
+    opacity: .2
+    text-transform: uppercase
+    padding: 1em 0
+  .views_navigator
+    display: flex
+    .views_navigator_selector
+      color: #5d5d5d
+      text-decoration: none
+      text-transform: uppercase
+      font-size: 1.5em
+      line-height: 2em
+      display: block
+      margin: 0 1em
+      padding-left: 3em
+      position: relative
+      width: 10em
+      &:last-child
+        width: 7em
+      &:before
+        content: ''
+        width: 1.5em
+        height: 1.5em
+        position: absolute
+        left: 1em
+        bottom: .3em
+        overflow: hidden
+      &.girl
+        &:before
+          background: url('./../images/girl.png') no-repeat
+      &.man
+        a
+          line-height: 2em
+        &:before
+          background: url('./../images/men.png') no-repeat
+      &.travel
+        &:before
+          background: url('./../images/travel.png') no-repeat
+      &:hover
+        background: black
+        color: white
+        &:before
+          background-position-y: -1.5em
+

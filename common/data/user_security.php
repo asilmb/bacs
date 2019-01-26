@@ -1,5 +1,5 @@
 <?php
 
-use yii2lab\helpers\DataHelper;
+use yii2lab\extension\common\helpers\DataHelper;
 
 return DataHelper::loadFixture('user_security');
