@@ -13,16 +13,28 @@ $baseUrl = $this->context->getBaseUrl();
 
 $columns = [
 	[
-		'attribute' => 'name',
-		'label' => Yii::t('finance/document', 'name'),
+		'attribute' => 'desc',
+		'label' => Yii::t('finance/collection', 'desc'),
 	],
-	[
-		'attribute' => 'description',
-		'label' => Yii::t('finance/document', 'description'),
-	],
+    [
+        'attribute' => 'collection',
+        'label' => Yii::t('finance/collection', 'collection'),
+    ],
+    [
+        'attribute' => 'collectionType',
+        'label' => Yii::t('finance/collection', 'collection_type'),
+    ],
+    [
+        'attribute' => 'size',
+        'label' => Yii::t('finance/collection', 'size'),
+    ],
+    [
+        'attribute' => 'price',
+        'label' => Yii::t('finance/collection', 'price'),
+    ],
 	[
 		'class' => ActionColumn::class,
-		'template' => '{update} {delete}'
+		'template' => '{view}{update} {delete}'
 	],
 ];
 

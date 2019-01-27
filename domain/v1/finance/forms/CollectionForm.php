@@ -8,7 +8,7 @@ class CollectionForm extends Model
 {
 
     public $id;
-    public $decs;
+    public $desc;
     public $brand;
     public $color;
     public $brandCountry;
@@ -19,21 +19,27 @@ class CollectionForm extends Model
     public $price;
     public $image;
 
+
     public function rules()
     {
         return [
-            [['decs', 'brand', 'color', 'brandCountry', 'madeIn', 'collection', 'collectionType', 'size', 'price'], 'required'],
-            [['image'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
+            [['desc', 'brand', 'color', 'brandCountry', 'madeIn', 'collection', 'collectionType', 'size', 'price'], 'required'],
+
         ];
     }
 
-    public function upload($path)
+
+    public function attributeLabels()
     {
-        if ($this->validate()) {
-            $this->image->saveAs($path . '/' . $this->image->baseName . '.' . $this->image->extension);
-            return true;
-        } else {
-            return false;
-        }
+        return ['desc' => 'Описание',
+            'brand' => 'Бренд',
+            'color' => 'Цвет',
+            'brandCountry' => 'Страна бренда',
+            'madeIn' => 'Производитель',
+            'collection' => 'Коллекция',
+            'collectionType' => 'Тип Коллекции',
+            'size' => 'Размер',
+            'price' => 'Цена',
+        ];
     }
 }

@@ -4,6 +4,7 @@ use common\enums\rbac\PermissionEnum;
 use yii2lab\extension\web\helpers\Behavior;
 
 return [
+    'user' => 'yii2module\account\module\Module',
 	'error' => 'yii2module\error\module\Module',
 	'collection' => 'backend\modules\collection\Module',
 	'offline' => 'yii2module\offline\admin\Module',

@@ -7,6 +7,8 @@ namespace domain\v1\finance;
  * 
  * @package domain\v1\finance\enums
  * @property-read \domain\v1\finance\interfaces\services\CollectionInterface $process
+ * @property-read \domain\v1\finance\interfaces\services\CollectionInterface $collection
+ * @property-read \domain\v1\finance\interfaces\repositories\RepositoriesInterface $repositories
  */
 class Domain extends \yii2lab\domain\Domain {
 	

@@ -10,10 +10,11 @@ use yii\bootstrap\ActiveForm;
     <?php $form = ActiveForm::begin();
     $form->method = "post";
     ?>
+    
     <?= $form->field($model, 'image')->fileInput()->label('Загрузить отчет') ?>
     <input type="submit" value="Загрузить"><br>
     <?php ActiveForm::end(); ?>
-
+    <img src="<?=$model->image?>" alt="">
 
 </div>
 

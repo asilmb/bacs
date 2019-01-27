@@ -19,7 +19,7 @@ use yii2lab\domain\data\Query;
  */
 class CollectionRepository extends BaseActiveArRepository implements CollectionInterface {
 
-	protected $schemaClass = true;
+
 
     public function fieldAlias()
 	{

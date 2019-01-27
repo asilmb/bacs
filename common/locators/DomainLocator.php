@@ -12,5 +12,6 @@ use yii2lab\domain\base\BaseDomainLocator;
  * @property-read \yii2woop\bank\domain\v2\Domain $bank
  * @property-read \yii2woop\partner\domain\Domain $partner
  * @property-read \yii2module\account\domain\v2\Domain $account
+ * @property-read \domain\v1\finance\Domain $finance
  */
 class DomainLocator extends BaseDomainLocator {}

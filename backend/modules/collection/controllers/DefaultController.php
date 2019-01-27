@@ -2,8 +2,13 @@
 
 namespace backend\modules\collection\controllers;
 
+use domain\v1\finance\enums\CollectionTypeEnum;
 use domain\v1\finance\forms\CollectionForm;
+use domain\v1\finance\forms\UploadForm;
 use Yii;
+use yii\web\UploadedFile;
+use yii2lab\app\domain\helpers\EnvService;
+use yii2lab\domain\data\Query;
 use yii2lab\domain\web\ActiveController as Controller;
 
 class DefaultController extends Controller
@@ -13,74 +18,61 @@ class DefaultController extends Controller
     public $formClass = CollectionForm::class;
     public $service = 'finance.collection';
 
-    public function actionMan() {
+    public function actions()
+    {
+        $actions = parent::actions();
 
-
-
-        return $this->render('index', ['model' => $model]);
+        return $actions;
     }
-    public function actionWomen() {
-        $path = 'collection/women';
-        $model = new CollectionForm();
-        if(Yii::$app->request->isPost) {
-            $model->imageFile = CollectionForm::getInstance($model, 'image');
-            if($model->upload($path)) {
-                $currentTable = $this->scan($model->imageFile->name, true);
-                return $this->render('download', ['model' => $model, 'currentTable' => $currentTable]);
+
+    public function actionMan()
+    {
+        $query = Query::forge();
+        $query->where('collectionType', CollectionTypeEnum::MEN);
+        $dataProvider = \App::$domain->finance->collection->getDataProvider();
+        return $this->render('index', ['dataProvider' => $dataProvider]);
+    }
+
+    public function actionView($id)
+    {
+        $entity = $this->service->oneById($id);
+        $path = Yii::getAlias('@frontend/web') . '/images/collections/' . $entity->collectionType;
+        $model = new UploadForm();
+        if (Yii::$app->request->isPost) {
+            $model->image = UploadedFile::getInstance($model, 'image');
+            $model->image->name = str_replace(' ', '_', $model->image->name);
+            if ($model->upload($path)) {
+                if ($entity->image) {
+                    try {
+                        unlink($path . '/' . $entity->image);
+                    } catch (\Exception $e) {
+
+                    }
+                }
+                $entity->image = $model->image->baseName . '.' . $model->image->extension;
+                $this->service->update($entity);
+                return $this->redirect('/collection/' . $entity->collectionType);
             }
         }
-
-        return $this->render('download', ['model' => $model]);
-    }
-    public function actionTravel() {
-        $path = 'collection/travel';
-        $model = new CollectionForm();
-        if(Yii::$app->request->isPost) {
-            $model->imageFile = CollectionForm::getInstance($model, 'image');
-            if($model->upload($path)) {
-                $currentTable = $this->scan($model->imageFile->name, true);
-                return $this->render('download', ['model' => $model, 'currentTable' => $currentTable]);
-            }
-        }
-
-        return $this->render('download', ['model' => $model]);
-    }
-    public function actionDownloadMan() {
-        $path = 'collection/man';
-        $model = new CollectionForm();
-        if(Yii::$app->request->isPost) {
-            $model->imageFile = CollectionForm::getInstance($model, 'image');
-            if($model->upload($path)) {
-                $currentTable = $this->scan($model->imageFile->name, true);
-                return $this->render('download', ['model' => $model, 'currentTable' => $currentTable]);
-            }
+        if ($entity->image) {
+            $model->image = env('url.frontend') . 'images/collections/' . $entity->collectionType . '/' . $entity->image;
         }
         return $this->render('download', ['model' => $model]);
     }
-    public function actionDownloadWomen() {
-        $path = 'collection/women';
-        $model = new CollectionForm();
-        if(Yii::$app->request->isPost) {
-            $model->imageFile = CollectionForm::getInstance($model, 'image');
-            if($model->upload($path)) {
-                $currentTable = $this->scan($model->imageFile->name, true);
-                return $this->render('download', ['model' => $model, 'currentTable' => $currentTable]);
-            }
-        }
 
-        return $this->render('download', ['model' => $model]);
+    public function actionWomen()
+    {
+        $query = Query::forge();
+        $query->where('collectionType', CollectionTypeEnum::MEN);
+        $dataProvider = \App::$domain->finance->collection->getDataProvider();
+        return $this->render('index', ['dataProvider' => $dataProvider]);
     }
-    public function actionDownloadTravel() {
-        $path = 'collection/travel';
-        $model = new CollectionForm();
-        if(Yii::$app->request->isPost) {
-            $model->imageFile = CollectionForm::getInstance($model, 'image');
-            if($model->upload($path)) {
-                $currentTable = $this->scan($model->imageFile->name, true);
-                return $this->render('download', ['model' => $model, 'currentTable' => $currentTable]);
-            }
-        }
 
-        return $this->render('download', ['model' => $model]);
+    public function actionTravel()
+    {
+        $query = Query::forge();
+        $query->where('collectionType', CollectionTypeEnum::MEN);
+        $dataProvider = \App::$domain->finance->collection->getDataProvider();
+        return $this->render('index', ['dataProvider' => $dataProvider]);
     }
 }

@@ -14,5 +14,6 @@ use yii2lab\domain\interfaces\services\CrudInterface;
  */
 interface CollectionInterface extends CrudInterface {
 
-	public function getDebtData();
+
+    public function getCollectionTypeList();
 }

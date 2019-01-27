@@ -25,7 +25,7 @@ class CollectionEntity extends BaseEntity
 {
 
     protected $id;
-    protected $decs;
+    protected $desc;
     protected $brand;
     protected $color;
     protected $brandCountry;
@@ -34,4 +34,6 @@ class CollectionEntity extends BaseEntity
     protected $collectionType;
     protected $size;
     protected $price;
+    protected $image;
+
 }
