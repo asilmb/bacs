@@ -7,7 +7,6 @@ use yii\helpers\Html;
 
 use yii2lab\misc\yii\grid\TitleColumn;
 use yii2lab\extension\web\grid\ActionColumn;
-$this->title = Yii::t('finance/operation', 'list');
 
 $baseUrl = $this->context->getBaseUrl();
 

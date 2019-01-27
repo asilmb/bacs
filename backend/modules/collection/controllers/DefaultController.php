@@ -29,7 +29,7 @@ class DefaultController extends Controller
     {
         $query = Query::forge();
         $query->where('collectionType', CollectionTypeEnum::MEN);
-        $dataProvider = \App::$domain->finance->collection->getDataProvider();
+        $dataProvider = \App::$domain->finance->collection->getDataProvider($query);
         return $this->render('index', ['dataProvider' => $dataProvider]);
     }
 
@@ -63,16 +63,16 @@ class DefaultController extends Controller
     public function actionWomen()
     {
         $query = Query::forge();
-        $query->where('collectionType', CollectionTypeEnum::MEN);
-        $dataProvider = \App::$domain->finance->collection->getDataProvider();
+        $query->where('collectionType', CollectionTypeEnum::WOMEN);
+        $dataProvider = \App::$domain->finance->collection->getDataProvider($query);
         return $this->render('index', ['dataProvider' => $dataProvider]);
     }
 
     public function actionTravel()
     {
         $query = Query::forge();
-        $query->where('collectionType', CollectionTypeEnum::MEN);
-        $dataProvider = \App::$domain->finance->collection->getDataProvider();
+        $query->where('collectionType', CollectionTypeEnum::TRAVEL);
+        $dataProvider = \App::$domain->finance->collection->getDataProvider($query);
         return $this->render('index', ['dataProvider' => $dataProvider]);
     }
 }
