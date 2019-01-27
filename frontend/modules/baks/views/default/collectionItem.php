@@ -29,7 +29,7 @@
             <?= $item->size ?>
         </p>
         <p class="view-info_price">
-            <?= $item->price ?>
+            <?= $item->price ?> тг.
         </p>
 
     </div>
