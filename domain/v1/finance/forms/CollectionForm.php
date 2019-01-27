@@ -17,13 +17,14 @@ class CollectionForm extends Model
     public $collectionType;
     public $size;
     public $price;
+    public $composition;
     public $image;
 
 
     public function rules()
     {
         return [
-            [['desc', 'brand', 'color', 'brandCountry', 'madeIn', 'collection', 'collectionType', 'size', 'price'], 'required'],
+            [['desc', 'brand', 'color', 'brandCountry', 'madeIn', 'collection','composition', 'collectionType', 'size', 'price'], 'required'],
 
         ];
     }
@@ -38,6 +39,7 @@ class CollectionForm extends Model
             'madeIn' => 'Производитель',
             'collection' => 'Коллекция',
             'collectionType' => 'Тип Коллекции',
+            'composition' => 'Состав',
             'size' => 'Размер',
             'price' => 'Цена',
         ];

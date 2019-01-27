@@ -28,7 +28,7 @@ $(document).ready(function () {
     );
     $(".catalog-views .owl-carousel").owlCarousel({
             navText: ["",""],
-            loop:true,
+            loop: false,
             margin: 20,
             nav:true,
             responsive: {

@@ -20,6 +20,7 @@ use yii2mod\markdown\MarkdownEditor;
 <?= $form->field($model, 'brandCountry')->textInput(); ?>
 <?= $form->field($model, 'madeIn')->textInput(); ?>
 <?= $form->field($model, 'collection')->textInput(); ?>
+<?= $form->field($model, 'composition')->textInput(); ?>
 <?= $form->field($model, 'collectionType')->dropDownList([\App::$domain->finance->collection->getCollectionTypeList()]); ?>
 <?= $form->field($model, 'size')->textInput(); ?>
 <?= $form->field($model, 'price')->textInput(); ?>

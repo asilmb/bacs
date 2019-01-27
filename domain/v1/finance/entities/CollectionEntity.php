@@ -11,15 +11,17 @@ use yii2lab\domain\BaseEntity;
  * @package domain\v1\finance\entities
  *
  * @property integer $id
- * @property string $decs
+ * @property string $desc
  * @property string $brand
  * @property string $color
  * @property string $brandCountry
  * @property string $madeIn
  * @property string $collection
+ * @property string $composition
  * @property string $collectionType
  * @property string $size
  * @property string $price
+ * @property string $image
  */
 class CollectionEntity extends BaseEntity
 {
@@ -34,6 +36,7 @@ class CollectionEntity extends BaseEntity
     protected $collectionType;
     protected $size;
     protected $price;
+    protected $composition;
     protected $image;
 
 }

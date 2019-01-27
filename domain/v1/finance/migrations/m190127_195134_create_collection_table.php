@@ -21,6 +21,7 @@ class m190127_195134_create_collection_table extends Migration
             'brand_country' => $this->text(),
             'made_in' => $this->text(),
             'collection' => $this->text(),
+            'composition' => $this->text(),
             'collection_type' => $this->text(),
             'size' => $this->text(),
             'price' => $this->text(),
