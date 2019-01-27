@@ -2,9 +2,9 @@
 
 namespace frontend\modules\reports;
 
-use common\enums\rbac\PermissionEnum;
+
 use yii\base\Module as YiiModule;
-use yii2lab\helpers\Behavior;
+
 
 
 /**

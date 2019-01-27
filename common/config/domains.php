@@ -14,5 +14,4 @@ return [
 	'rbac' => 'yii2lab\rbac\domain\Domain',
 	'account' => 'yii2module\account\domain\v2\Domain',
     'finance' => 'domain\v1\finance\Domain',
-
 ];
