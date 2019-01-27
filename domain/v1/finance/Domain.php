@@ -6,9 +6,8 @@ namespace domain\v1\finance;
  * Class Domain
  * 
  * @package domain\v1\finance\enums
- * @property-read \domain\v1\finance\interfaces\services\CollectionInterface $process
  * @property-read \domain\v1\finance\interfaces\services\CollectionInterface $collection
- * @property-read \domain\v1\finance\interfaces\repositories\RepositoriesInterface $repositories
+ * @property-read \domain\v1\finance\interfaces\services\StockInterface $stock
  */
 class Domain extends \yii2lab\domain\Domain {
 	
@@ -16,9 +15,11 @@ class Domain extends \yii2lab\domain\Domain {
 		return [
 			'repositories' => [
 				'collection',
+                'stock',
 			],
 			'services' => [
 				'collection',
+                'stock',
 			],
 		];
 	}
