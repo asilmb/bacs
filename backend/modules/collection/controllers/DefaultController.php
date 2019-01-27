@@ -25,7 +25,7 @@ class DefaultController extends Controller
         return $actions;
     }
 
-    public function actionMan()
+    public function actionMen()
     {
         $query = Query::forge();
         $query->where('collectionType', CollectionTypeEnum::MEN);
