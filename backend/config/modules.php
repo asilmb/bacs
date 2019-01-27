@@ -8,7 +8,7 @@ return [
 //	'service' => 'yii2woop\service\admin\Module',
 	'error' => 'yii2module\error\module\Module',
 //	'notify' => 'yii2lab\notify\admin\Module',
-	'user' => 'yii2module\account\module\BackendModule',
+	'collection' => 'backend\modules\collection\Module',
 	'offline' => 'yii2module\offline\admin\Module',
 //	'rbac' => \yii2lab\rbac\admin\helpers\ModuleHelper::config(),
 	'dashboard' => [
