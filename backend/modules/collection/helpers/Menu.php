@@ -25,7 +25,7 @@ class Menu implements MenuInterface {
                     ],
                     [
                         'label' => ['finance/collection', 'man'],
-                        'url' => 'collection/man',
+                        'url' => 'collection/men',
                         'icon' => 'file-text-o',
                         'module' => 'collection',
                         'access' => PermissionEnum::BACKEND_ALL,

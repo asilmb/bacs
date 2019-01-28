@@ -2,6 +2,9 @@
 
 namespace backend\modules\collection\controllers;
 
+use backend\modules\collection\actions\CreateAction;
+use backend\modules\collection\actions\DeleteAction;
+use backend\modules\collection\actions\UpdateAction;
 use domain\v1\finance\enums\CollectionTypeEnum;
 use domain\v1\finance\forms\CollectionForm;
 use domain\v1\finance\forms\UploadForm;
@@ -21,7 +24,10 @@ class DefaultController extends Controller
     public function actions()
     {
         $actions = parent::actions();
-
+        $actions['index']['render'] = 'index';
+        $actions['create']['class'] = CreateAction::class;
+        $actions['update']['class'] = UpdateAction::class;
+        $actions['delete']['class'] = DeleteAction::class;
         return $actions;
     }
 

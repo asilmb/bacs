@@ -24,5 +24,5 @@ class StockEntity extends BaseEntity
     protected $descFull;
     protected $date;
     protected $image;
-
+    protected $stockType;
 }

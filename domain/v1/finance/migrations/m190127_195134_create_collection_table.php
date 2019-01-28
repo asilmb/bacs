@@ -18,6 +18,7 @@ class m190127_195134_create_collection_table extends Migration
             'id' => $this->primaryKey(),
             'desc' => $this->text(),
             'color' => $this->text(),
+            'brand' => $this->text(),
             'brand_country' => $this->text(),
             'made_in' => $this->text(),
             'collection' => $this->text(),

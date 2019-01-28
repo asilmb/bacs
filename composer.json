@@ -25,7 +25,8 @@
 		"yii2module/yii2-markdown": "dev-master",
 		"yii2module/yii2-dashboard": "dev-master",
 		"yii2module/yii2-account": "dev-master",
-		"yii2module/yii2-summary": "dev-master"
+		"yii2module/yii2-summary": "dev-master",
+		"kartik-v/yii2-widget-datepicker": "@dev"
 	},
 	"require-dev": {
 		"yii2lab/yii2-test": "dev-master",

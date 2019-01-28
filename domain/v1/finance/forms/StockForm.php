@@ -12,7 +12,7 @@ class StockForm extends Model
     public $descFull;
     public $date;
     public $image;
-
+    public $stockType;
 
     public function rules()
     {
@@ -29,6 +29,7 @@ class StockForm extends Model
             'descPresent' => 'Описание превью',
             'descFull' => 'Полный текст Акции',
             'date' => 'Дата',
+            'stockType' => 'Тип Акции'
         ];
     }
 }
