@@ -145,6 +145,7 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop: top}, 500);
     });
 
+
     $(document).scroll(function () {
         if (($(document).scrollTop() >= $('#to-custumers').position().top) && ($(document).scrollTop() <= $('#to-custumers').position().top + $('#to-custumers').height())) {
             $('.menu-section-pagination_item').removeClass('active');
@@ -166,7 +167,7 @@ $(document).ready(function () {
             $('#current-page').empty()
             $('#current-page').append('03')
         }
-        if (($(document).scrollTop() >= $('#about').position().top) && ($(document).scrollTop() <= $('#about').position().top + $('#about').height())) {
+        if (($(document).scrollTop() >= $('#about').position().top-200) && ($(document).scrollTop() <= $('#about').position().top + $('#about').height())) {
 
             $('.menu-section-pagination_item').removeClass('active');
             $('#pagination-about').addClass('active');

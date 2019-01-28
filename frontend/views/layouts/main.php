@@ -48,10 +48,10 @@ AppAsset::register($this);
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section-page-info">
         <div class="menu-section-pagination">
-            <div id="pagination-main" class="menu-section-pagination_item active"></div>
-            <div id="pagination-collection"  class="menu-section-pagination_item"></div>
-            <div id="pagination-stock"  class="menu-section-pagination_item"></div>
-            <div id="pagination-about"  class="menu-section-pagination_item"></div>
+            <a id="pagination-main" href="#to-custumers" class="menu-section-pagination_item active"></a>
+            <a id="pagination-collection"  href="#collection" class="menu-section-pagination_item"></a>
+            <a id="pagination-stock"  href="#section-stock" class="menu-section-pagination_item"></a>
+            <a id="pagination-about" href="#about" class="menu-section-pagination_item"></a>
         </div>
 
         <div class="menu-section-pagination_line"></div>
