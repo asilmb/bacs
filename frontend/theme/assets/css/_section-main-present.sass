@@ -1,65 +1,79 @@
-.main-present
-  height: 55em
-  display: block
-  overflow: hidden
-  .owl-nav
-    position: absolute
-    top: 40%
-  .owl-carousel__item
-    img
-      max-width: 100%
-      height: auto
-  .main-present_play-btn
-    position: absolute
-    background: url('./../images/main-present-play.png') no-repeat
-    width: 13em
-    height: 13em
-    top: 20%
-    right: 10%
-  .main-present_call-btn
-    position: absolute
-    top: 30px
-    left: 200px
-    z-index: 10000
-    border: 1px #a36f1b solid
-    padding: 10px 15px
-    background: white
-    p
-      padding: 0
-      margin: 0
-      font-size: 20px
-      color: #a36f1b
-  .present-title
-    position: absolute
-    height: auto
-    width: 80%
-    background: white
-    bottom: 0
-    left: 6em
-    z-index: 100000
-    padding: 4em 0
-    display: flex
-    .present-title_title
-      padding: 0 4em
-      display: inline-block
-      max-width: 40%
-      border-right: 1px #a36f1b solid
-      vertical-align: middle
-      h2
-        margin: 0
-        padding: 0
-        font-size: 3em
-    .present-title_sub-title
-      display: flex
-      align-items: center
-      padding: 0 2em
-      max-width: 40%
-      vertical-align: middle
+.section-main
+  .main-present
+    height: 55em
+    display: none
+    overflow: hidden
+    &.active
+      display: block
+    .owl-nav
+      position: absolute
+      top: 40%
+    .owl-carousel__item
+      img
+        max-width: 100%
+        height: auto
+    .main-present_play-btn
+      position: absolute
+      background: url('./../images/main-present-play.png') no-repeat
+      width: 13em
+      height: 13em
+      top: 20%
+      right: 10%
+    .main-present_call-btn
+      position: absolute
+      top: 30px
+      left: 200px
+      z-index: 10000
+      border: 1px #a36f1b solid
+      padding: 10px 15px
+      background: white
       p
+        padding: 0
         margin: 0
-        color: #5d5d5d
-        font-family: RobotoLight
-
+        font-size: 20px
+        color: #a36f1b
+    .present-title
+      position: absolute
+      height: auto
+      width: 80%
+      background: white
+      bottom: 0
+      left: 6em
+      z-index: 100000
+      padding: 4em 0
+      display: flex
+      .present-title_title
+        padding: 0 4em
+        display: inline-block
+        max-width: 40%
+        border-right: 1px #a36f1b solid
+        vertical-align: middle
+        h2
+          margin: 0
+          padding: 0
+          font-size: 3em
+      .present-title_sub-title
+        display: flex
+        align-items: center
+        padding: 0 2em
+        max-width: 40%
+        vertical-align: middle
+        p
+          margin: 0
+          color: #5d5d5d
+          font-family: RobotoLight
+.main-send
+  .catalog-views_close-btn
+    position: absolute
+    top: 3em
+    right: 6em
+    display: none
+    padding: 2px
+    &:hover
+      background: black
+      color: white
+    &.active
+      display: flex
 .owl-nav
   position: absolute
   width: 100%

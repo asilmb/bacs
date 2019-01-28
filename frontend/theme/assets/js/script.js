@@ -174,4 +174,18 @@ $(document).ready(function () {
             $('#current-page').append('04')
         }
     })
+
+
+    $(".renter").click(function () {
+        $(".main-present").removeClass("active");
+        $(".main-send--renter").addClass('active')
+    });
+    $(".gov").click(function () {
+        $(".main-present").removeClass("active");
+        $(".main-send--gov").addClass('active')
+    });
+    $(".provider").click(function () {
+        $(".main-present").removeClass("active");
+        $(".main-send--provider").addClass('active')
+    });
 });
