@@ -39,18 +39,23 @@ AppAsset::register($this);
     <div class="navigation-vertical_logo_menu-section menu-section menu-section--main-links">
         <div class="menu-section_menu-item"> <a href="#section-stock">Акции</a></div>
         <div class="menu-section_menu-item"><a href="#about" class="menu-section_menu-item">О нас</a></div>
-            <div class="menu-section_menu-item"><a href="#contacts" class="menu-section_menu-item">Контакты</a></div>
+        <div class="menu-section_menu-item"><a href="#contacts" class="menu-section_menu-item">Контакты</a></div>
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section menu-section--main-links">
         <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item">Госзакуп</a></div>
-            <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item">Поставщикам</a></div>
-                <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item">Арендаторам</a></div>
+        <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item">Поставщикам</a></div>
+        <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item">Арендаторам</a></div>
     </div>
-    <div class="navigation-vertical_logo_menu-section menu-section menu-section-pagination">
-        <div id="pagination-main" class="menu-section-pagination_item active"></div>
-        <div id="pagination-collection"  class="menu-section-pagination_item"></div>
-        <div id="pagination-stock"  class="menu-section-pagination_item"></div>
-        <div id="pagination-about"  class="menu-section-pagination_item"></div>
+    <div class="navigation-vertical_logo_menu-section menu-section-page-info">
+        <div class="menu-section-pagination">
+            <div id="pagination-main" class="menu-section-pagination_item active"></div>
+            <div id="pagination-collection"  class="menu-section-pagination_item"></div>
+            <div id="pagination-stock"  class="menu-section-pagination_item"></div>
+            <div id="pagination-about"  class="menu-section-pagination_item"></div>
+        </div>
+
+        <div class="menu-section-pagination_line"></div>
+        <p class="menu-section-pagination_page-number"><span class="current-page" id="current-page">01</span>/04</p>
     </div>
 </div>
 <div class="container">
