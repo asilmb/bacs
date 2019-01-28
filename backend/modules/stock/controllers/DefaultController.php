@@ -35,7 +35,8 @@ class DefaultController extends Controller
         $model = new UploadForm();
         if (Yii::$app->request->isPost) {
             $model->image = UploadedFile::getInstance($model, 'image');
-            $model->image->name = str_replace(' ', '_', $model->image->name);
+            $dateTime = new \DateTime();
+            $model->image->name = $dateTime->getTimestamp(). str_replace(' ', '_', $model->image->name);
             if ($model->upload($path)) {
                 if ($entity->image) {
                     try {
