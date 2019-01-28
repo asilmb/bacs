@@ -20,32 +20,31 @@ AppAsset::register($this);
         <img src="/images/menu/logo.png">
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section">
-            <div class="menu-section_menu-item">
-                <a href="">
-                    <p>Женская</p>
-                    <p>коллекция</p>
-                </a>
-            </div>
-            <div class="menu-section_menu-item">
-                <a href=" ">
-                    <p>Мужская</p>
-                    <p>коллекция</p>
-                </a>
-            </div>
-            <div class="menu-section_menu-item">   <a href=" ">
-                    <p>Путешествия</p>
-                </a></div>
-
+        <div class="menu-section_menu-item girl">
+            <a href="#collection">
+                <p>Женская</p>
+                <p>коллекция</p>
+            </a>
+        </div>
+        <div class="menu-section_menu-item man">
+            <a href="#collection">
+                <p>Мужская</p>
+                <p>коллекция</p>
+            </a>
+        </div>
+        <div class="menu-section_menu-item travel"><a href="#collection">
+                <p>Путешествия</p>
+            </a></div>
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section menu-section--main-links">
-        <div class="menu-section_menu-item"><a href="#">Акции</a></div>
-        <div class="menu-section_menu-item"><a href="#">О нас</a></div>
-        <div class="menu-section_menu-item"><a href="#">Контакты</a></div>
+        <a href="#section-stock" class="menu-section_menu-item">Акции</a>
+        <a href="#about" class="menu-section_menu-item">О нас</a>
+        <a href="#contacts" class="menu-section_menu-item">Контакты</a>
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section menu-section--main-links">
-        <div class="menu-section_menu-item"><a href="#">Госзакуп</a></div>
-        <div class="menu-section_menu-item"><a href="#">Поставщикам</a></div>
-        <div class="menu-section_menu-item"><a href="#">Арендаторам</a></div>
+        <a href="#to-custumers" class="menu-section_menu-item">Госзакуп</a>
+        <a href="#to-custumers" class="menu-section_menu-item">Поставщикам</a>
+        <a href="#to-custumers" class="menu-section_menu-item">Арендаторам</a>
     </div>
 </div>
 <div class="container">

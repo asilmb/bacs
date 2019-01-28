@@ -1,18 +1,18 @@
 $(document).ready(function () {
     $(".section-main .owl-carousel").owlCarousel({
-            navText: ["",""],
+            navText: ["", ""],
             loop: true,
             margin: 0,
             nav: true,
             items: 1,
-            responsiveClass:true,
+            responsiveClass: true,
         }
     );
     $(".section-stock .owl-carousel").owlCarousel({
-            navText: ["",""],
-            loop:false,
+            navText: ["", ""],
+            loop: false,
             margin: 10,
-            nav:true,
+            nav: true,
             responsive: {
                 0: {
                     items: 1
@@ -27,10 +27,10 @@ $(document).ready(function () {
         }
     );
     $(".catalog-views .owl-carousel").owlCarousel({
-            navText: ["",""],
+            navText: ["", ""],
             loop: false,
             margin: 20,
-            nav:true,
+            nav: true,
             responsive: {
                 0: {
                     items: 1
@@ -45,28 +45,28 @@ $(document).ready(function () {
         }
     );
 });
-$(document).ready(function(){
-    $(".catalog-present-collections_selector.girl").hover(function(){
+$(document).ready(function () {
+    $(".catalog-present-collections_selector.girl").hover(function () {
         $(".catalog-present-collections_item").removeClass("active");
         $(".catalog-present-collections_item.girl").addClass('active')
     });
-    $(".catalog-present-collections_selector.man").hover(function(){
+    $(".catalog-present-collections_selector.man").hover(function () {
         $(".catalog-present-collections_item").removeClass("active");
         $(".catalog-present-collections_item.man").addClass('active')
     });
-    $(".catalog-present-collections_selector.travel").hover(function(){
+    $(".catalog-present-collections_selector.travel").hover(function () {
         $(".catalog-present-collections_item").removeClass("active");
         $(".catalog-present-collections_item.travel").addClass('active')
     });
 
-    $(".astana").click(function(){
+    $(".astana").click(function () {
         $(".geo-cities_city").removeClass("active");
         $(".map-geo_yandex").removeClass("active");
 
         $(".geo-cities_city.astana").addClass('active');
         $(".map-geo_yandex.astana").addClass('active');
     });
-    $(".karagandy").click(function(){
+    $(".karagandy").click(function () {
         $(".geo-cities_city").removeClass("active");
         $(".map-geo_yandex").removeClass('active');
 
@@ -74,8 +74,7 @@ $(document).ready(function(){
         $(".map-geo_yandex.karagandy").addClass('active');
     });
 
-    $(".girl").click(function(){
-
+    $(".girl").click(function () {
         $(".catalog-views").addClass("active");
         $(".catalog-present").removeClass("active");
         $(".catalog-views_close-btn").addClass('active')
@@ -84,7 +83,7 @@ $(document).ready(function(){
         $(".custom-catalog").removeClass("active");
         $(".custom-catalog.catalog-women").addClass('active')
     });
-    $(".man").click(function(){
+    $(".man").click(function () {
         $(".catalog-views").addClass("active");
         $(".catalog-present").removeClass("active");
         $(".catalog-views_close-btn").addClass('active')
@@ -93,7 +92,7 @@ $(document).ready(function(){
         $(".custom-catalog").removeClass("active");
         $(".custom-catalog.catalog-man").addClass('active')
     });
-    $(".travel").click(function(){
+    $(".travel").click(function () {
         $(".catalog-views").addClass("active");
         $(".catalog-present").removeClass("active");
         $(".catalog-views_close-btn").addClass('active')
@@ -102,10 +101,48 @@ $(document).ready(function(){
         $(".custom-catalog").removeClass("active");
         $(".custom-catalog.catalog-travel").addClass('active')
     });
-    $(".catalog-views_close-btn").click(function(){
+
+
+    $(".girl").click(function () {
+        $(".catalog-views").addClass("active");
+        $(".catalog-present").removeClass("active");
+        $(".catalog-views_close-btn").addClass('active')
+        $(".views_navigator_selector").removeClass("active");
+        $(".views_navigator_selector.girl").addClass('active');
+        $(".custom-catalog").removeClass("active");
+        $(".custom-catalog.catalog-women").addClass('active')
+    });
+    $(".man").click(function () {
+        $(".catalog-views").addClass("active");
+        $(".catalog-present").removeClass("active");
+        $(".catalog-views_close-btn").addClass('active')
+        $(".views_navigator_selector").removeClass("active");
+        $(".views_navigator_selector.man").addClass('active');
+        $(".custom-catalog").removeClass("active");
+        $(".custom-catalog.catalog-man").addClass('active')
+    });
+    $(".travel").click(function () {
+        $(".catalog-views").addClass("active");
+        $(".catalog-present").removeClass("active");
+        $(".catalog-views_close-btn").addClass('active')
+        $(".views_navigator_selector").removeClass("active");
+        $(".views_navigator_selector.travel").addClass('active');
+        $(".custom-catalog").removeClass("active");
+        $(".custom-catalog.catalog-travel").addClass('active')
+    });
+    $(".catalog-views_close-btn").click(function () {
         $(".catalog-views").removeClass("active");
         $(".catalog-views_close-btn").removeClass('active');
         $(".custom-catalog").removeClass("active");
         $(".catalog-present").addClass('active')
     });
+
+
+    $(".navigation-vertical-left").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
+
 });
