@@ -253,8 +253,8 @@ $this->title = t('account/main', 'title');
         </div>
         <div class="map-geo">
             <div class="map-geo_cities geo-cities">
-                <p class="geo-cities_city astana active">Темиртау</p>
                 <p class="geo-cities_city karagandy">Караганда</p>
+                <p class="geo-cities_city astana active">Темиртау</p>
             </div>
             <div class="map-geo_yandex astana active">
                 <script type="text/javascript" charset="utf-8" async
