@@ -37,14 +37,20 @@ AppAsset::register($this);
             </a></div>
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section menu-section--main-links">
-        <a href="#section-stock" class="menu-section_menu-item">Акции</a>
-        <a href="#about" class="menu-section_menu-item">О нас</a>
-        <a href="#contacts" class="menu-section_menu-item">Контакты</a>
+        <div class="menu-section_menu-item"> <a href="#section-stock">Акции</a></div>
+        <div class="menu-section_menu-item"><a href="#about" class="menu-section_menu-item">О нас</a></div>
+            <div class="menu-section_menu-item"><a href="#contacts" class="menu-section_menu-item">Контакты</a></div>
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section menu-section--main-links">
-        <a href="#to-custumers" class="menu-section_menu-item">Госзакуп</a>
-        <a href="#to-custumers" class="menu-section_menu-item">Поставщикам</a>
-        <a href="#to-custumers" class="menu-section_menu-item">Арендаторам</a>
+        <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item">Госзакуп</a></div>
+            <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item">Поставщикам</a></div>
+                <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item">Арендаторам</a></div>
+    </div>
+    <div class="navigation-vertical_logo_menu-section menu-section menu-section-pagination">
+        <div id="pagination-main" class="menu-section-pagination_item active"></div>
+        <div id="pagination-collection"  class="menu-section-pagination_item"></div>
+        <div id="pagination-stock"  class="menu-section-pagination_item"></div>
+        <div id="pagination-about"  class="menu-section-pagination_item"></div>
     </div>
 </div>
 <div class="container">
@@ -59,7 +65,6 @@ AppAsset::register($this);
     <div class="navigation-vertical_footer">
         <img src="/images/menu/footer.png">
     </div>
-
 </div>
 
 

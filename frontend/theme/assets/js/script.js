@@ -145,4 +145,7 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop: top}, 500);
     });
 
+   // $(document).scroll(function () {
+   //     if($(document).scrollTop() == )
+   // })
 });

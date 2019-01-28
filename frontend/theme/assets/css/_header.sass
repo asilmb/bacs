@@ -5,6 +5,8 @@
   z-index: 10000
   top: 0
   height: 100%
+  display: flex
+  flex-direction: column
   &.navigation-vertical-right
     right: 0
   &.navigation-vertical-left
@@ -14,9 +16,11 @@
   margin-left: 1.5em
   padding-bottom: 2em
   padding-top:  2em
+  &:nth-child(4)
+    border-bottom: none
   &.menu-section--main-links
     .menu-section_menu-item
-      padding: 0.6em 0.5em 0.7em 0
+      padding: 0.1em 0.1em 0.1em 0
       a
         font-weight: bold
         text-transform: none
@@ -44,6 +48,50 @@
           color: #fff
       &:visited
         text-decoration: none
+.menu-section-page-info
+  display: flex
+  height: 20em
+  width: 100%
+  flex-direction: column
+  align-items: center
+  justify-content: space-evenly
+  flex-grow: 2
+  .menu-section-pagination
+    display: flex
+    flex-direction: column
+    align-items: center
+    .menu-section-pagination_item
+      background: #fff
+      width: 1em
+      height: 1em
+      border-radius: 10em
+      border: 1px solid #b68653
+      margin: .4em
+      display: inline-block
+      position: relative
+      &.active:before
+        content: ""
+        width: 0
+        height: 0
+        border-left: 6px solid transparent
+        border-right: 6px solid transparent
+        border-bottom: 10px solid #b68653
+        position: absolute
+        top: -0.5em
+        right: 0
+        -webkit-transform: rotate(60deg)
+        -ms-transform: rotate(60deg)
+        transform: rotate(60deg)
+  .menu-section-pagination_line
+    border-right: 1px solid #b68653
+    height: 5em
+    width: 1px
+  .menu-section-pagination_page-number
+    color: #5d5d5d
+    font-size: 2em
+    .current-page
+      color: #5d5d5d
+      font-size: 1.4em
 
 
 
