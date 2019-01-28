@@ -10,7 +10,7 @@ $(document).ready(function () {
     );
     $(".section-stock .owl-carousel").owlCarousel({
             navText: ["",""],
-            loop:true,
+            loop:false,
             margin: 10,
             nav:true,
             responsive: {

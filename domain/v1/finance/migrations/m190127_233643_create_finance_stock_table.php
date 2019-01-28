@@ -16,6 +16,7 @@ class m190127_233643_create_finance_stock_table extends Migration
     {
         return [
             'id' => $this->primaryKey(),
+            'title' => $this->text(),
             'desc_present' => $this->text(),
             'desc_full' => $this->text(),
             'date' => $this->text(),

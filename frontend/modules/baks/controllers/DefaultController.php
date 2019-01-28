@@ -19,7 +19,11 @@ class DefaultController extends Controller {
         $query3 = Query::forge();
         $query3->where('collectionType', CollectionTypeEnum::TRAVEL);
         $travelCollection = \App::$domain->finance->collection->all($query3);
-		return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection'));
+
+
+        $stocks = \App::$domain->finance->stock->all();
+
+		return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection','stocks'));
 	}
 	
 }

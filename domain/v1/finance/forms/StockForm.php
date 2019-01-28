@@ -8,6 +8,7 @@ class StockForm extends Model
 {
 
     public $id;
+    public $title;
     public $descPresent;
     public $descFull;
     public $date;
@@ -17,7 +18,7 @@ class StockForm extends Model
     public function rules()
     {
         return [
-            [['descPresent', 'descFull', 'date'], 'required'],
+            [['title', 'descPresent', 'descFull', 'date'], 'required'],
 
         ];
     }
@@ -26,6 +27,7 @@ class StockForm extends Model
     public function attributeLabels()
     {
         return [
+            'title' => 'Заголовок',
             'descPresent' => 'Описание превью',
             'descFull' => 'Полный текст Акции',
             'date' => 'Дата',

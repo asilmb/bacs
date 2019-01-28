@@ -11,7 +11,10 @@ use yii2lab\extension\web\grid\ActionColumn;
 $baseUrl = $this->context->getBaseUrl();
 
 $columns = [
-
+    [
+        'attribute' => 'title',
+        'label' => Yii::t('finance/stock', 'title'),
+    ],
     [
         'attribute' => 'descPresent',
         'label' => Yii::t('finance/stock', 'descPresent'),

@@ -13,7 +13,7 @@ use yii2mod\markdown\MarkdownEditor;
 
 <?php $form = ActiveForm::begin(); ?>
 
-
+<?= $form->field($model, 'title')->textInput(); ?>
 <?= $form->field($model, 'descPresent')->textInput(); ?>
 <?= $form->field($model, 'descFull')->textInput(); ?>
 
