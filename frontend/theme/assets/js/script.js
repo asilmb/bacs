@@ -153,21 +153,21 @@ $(document).ready(function () {
             $('#current-page').append('01')
         }
         if (($(document).scrollTop() >= $('#collection').position().top) && ($(document).scrollTop() <= $('#collection').position().top + $('#collection').height())) {
-            console.log('collection');
+
             $('.menu-section-pagination_item').removeClass('active');
             $('#pagination-collection').addClass('active');
             $('#current-page').empty()
             $('#current-page').append('02')
         }
         if (($(document).scrollTop() >= $('#section-stock').position().top) && ($(document).scrollTop() <= $('#section-stock').position().top + $('#section-stock').height())) {
-            console.log('section-stock');
+
             $('.menu-section-pagination_item').removeClass('active');
             $('#pagination-stock').addClass('active');
             $('#current-page').empty()
             $('#current-page').append('03')
         }
         if (($(document).scrollTop() >= $('#about').position().top) && ($(document).scrollTop() <= $('#about').position().top + $('#about').height())) {
-            console.log('about');
+
             $('.menu-section-pagination_item').removeClass('active');
             $('#pagination-about').addClass('active');
             $('#current-page').empty()
