@@ -253,12 +253,12 @@ $this->title = t('account/main', 'title');
         </div>
         <div class="map-geo">
             <div class="map-geo_cities geo-cities">
-                <p class="geo-cities_city astana active">Астана</p>
+                <p class="geo-cities_city astana active">Темиртау</p>
                 <p class="geo-cities_city karagandy">Караганда</p>
             </div>
             <div class="map-geo_yandex astana active">
                 <script type="text/javascript" charset="utf-8" async
-                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A17c948431434ecbbbd226801c0c59555f782932e7e704a2a444dc78dc85aab08&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae94648661b7a08616f044e9b0500b5e8e52886edeb1d32ca395d2c3b70e77048&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
             <div class="map-geo_yandex karagandy">
                 <script type="text/javascript" charset="utf-8" async
