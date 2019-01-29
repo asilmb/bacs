@@ -12,6 +12,10 @@ $baseUrl = $this->context->getBaseUrl();
 
 $columns = [
     [
+        'attribute' => 'id',
+        'label' => '#',
+    ],
+    [
         'attribute' => 'title',
         'label' => Yii::t('finance/stock', 'title'),
     ],

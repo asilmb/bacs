@@ -24,8 +24,7 @@ class CollectionForm extends Model
     public function rules()
     {
         return [
-            [[ 'collectionType'], 'required'],
-
+            [['collectionType'], 'required'],
         ];
     }
 

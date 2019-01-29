@@ -13,6 +13,9 @@ return [
 		'@npm'   => '@vendor/npm-asset',
 	],
 	'components' => [
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+        ],
 		'time' => 'yii2lab\extension\time\components\TimeComponent',
 		'language' => 'yii2module\lang\domain\components\Language',
         'user' => [
