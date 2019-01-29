@@ -3,10 +3,11 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use kartik\alert\Alert;
 use yii2lab\extension\web\helpers\Page;
 use yii2lab\navigation\domain\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
-use yii2lab\navigation\domain\widgets\Alert;
+
 
 AppAsset::register($this);
 
@@ -59,6 +60,7 @@ AppAsset::register($this);
     </div>
 </div>
 <div class="container">
+
     <?= $content ?>
 </div>
 <div class="navigation-vertical navigation-vertical-right">

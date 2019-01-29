@@ -4,16 +4,20 @@ namespace frontend\modules\baks\controllers;
 
 use domain\v1\finance\enums\CollectionTypeEnum;
 use frontend\modules\baks\models\SendForm;
+use kartik\alert\Alert;
 use Yii;
 use yii\web\Controller;
+use yii\web\UploadedFile;
 use yii2lab\domain\data\Query;
 
-class DefaultController extends Controller {
-	
-	public function actionIndex(){
+class DefaultController extends Controller
+{
+
+    public function actionIndex()
+    {
         $query = Query::forge();
         $query->where('collectionType', CollectionTypeEnum::MEN);
-	    $menCollection = \App::$domain->finance->collection->all($query);
+        $menCollection = \App::$domain->finance->collection->all($query);
         $query2 = Query::forge();
         $query2->where('collectionType', CollectionTypeEnum::WOMEN);
         $womenCollection = \App::$domain->finance->collection->all($query2);
@@ -23,11 +27,18 @@ class DefaultController extends Controller {
 
         $stocks = \App::$domain->finance->stock->all();
 
-
+        \App::$domain->navigation->alert->create('yyyy2w', Alert::TYPE_SUCCESS);
         $sendForm = new SendForm();
-		return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection','stocks','sendForm'));
-	}
-    public function actionSend(){
+        return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm'));
+    }
+
+    /**
+     *
+     * @var UploadedFile $sendForm ->file
+     * @return string
+     */
+    public function actionSend()
+    {
         $query = Query::forge();
         $query->where('collectionType', CollectionTypeEnum::MEN);
         $menCollection = \App::$domain->finance->collection->all($query);
@@ -39,22 +50,35 @@ class DefaultController extends Controller {
         $travelCollection = \App::$domain->finance->collection->all($query3);
         $stocks = \App::$domain->finance->stock->all();
 
+
+
         $sendForm = new SendForm();
-	    $body = Yii::$app->request->getBodyParam($sendForm->formName());
-        $sendForm->validate($body);
-        if ($sendForm->hasErrors()){
-
-            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection','stocks','sendForm'));
+        $body = Yii::$app->request->getBodyParam($sendForm->formName());
+        $sendForm->load($body);
+        $sendForm->validate();
+        $sendForm->file = UploadedFile::getInstance($sendForm, 'file');
+        if ($sendForm->hasErrors()) {
+            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm'));
         }
-
-        Yii::$app->mailer->compose()
+        $mailRequest = Yii::$app->mailer->compose()
             ->setFrom('manager@mybaks.kz')
             ->setTo('asilbekmubarakov@mail.ru')
-            ->setSubject('Message subject')
-            ->setTextBody('Plain text content')
-            ->setHtmlBody('<b>HTML content</b>')
-            ->send();
+//            ->setTo($sendForm->email)
+            ->setSubject('Информация с сайта')
+            ->setHtmlBody(
+                '<p>' . $sendForm->name . '</p>',
+                '<p>' . $sendForm->surname . '</p>',
+                '<p>' . $sendForm->orgName . '</p>',
+                '<p>' . $sendForm->email . '</p>',
+                '<p>' . $sendForm->contactFace . '</p>',
+                '<p>' . $sendForm->phone . '</p>');
 
-        return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection','stocks', 'sendForm'  ));
+
+        if (!empty($sendForm->file)) {
+            $mailRequest->attach($sendForm->file->tempName);
+        }
+        $mailResponse = $mailRequest->send();
+
+        return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm'));
     }
 }
