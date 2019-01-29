@@ -14,10 +14,10 @@
   .main-present
     height: 55em
     display: none
-    //display: block
+
     overflow: hidden
     &.active
-      //display: block
+      display: block
     .owl-nav
       position: absolute
       top: 40%
@@ -130,9 +130,11 @@
 .main-send
   background: #faf7f3
   padding: 6em
-  display: flex
+  display: none
   height: 100%
   box-sizing: border-box
+  &.active
+    display: flex
   .main-send_side
     flex-grow: 1
     flex-basis: 50%

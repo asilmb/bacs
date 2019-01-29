@@ -8,7 +8,7 @@ use yii\widgets\ActiveForm;
 ?>
 
 <div class="section-main section clearfix" id="to-custumers">
-    <div class="main-present <?= !($sendForm->hasErrors()) ? 'active': ''?>">
+    <div class="main-present <?= !($sendForm->hasErrors() || $sendForm1->hasErrors() || $sendForm2->hasErrors()) ? 'active': ''?>">
         <div class="owl-carousel owl-round-pagination">
             <a class="owl-carousel__item">
                 <img src="/images/main-present-background.png" alt="">
@@ -45,7 +45,7 @@ use yii\widgets\ActiveForm;
             <div class="main-send_title send-title">
                 <div class="send-title_title">
                     <h2>
-                        Уважаемые партнеры!
+                        Уважаемые Арендодатели!
                     </h2>
                 </div>
                 <div class="send-title_sub-title">
@@ -114,6 +114,160 @@ use yii\widgets\ActiveForm;
 
                 </div>
                 <?php ActiveForm::end(); ?>
+
+        </div>
+    </div>
+    <div class="main-send main-send--provider <?= $sendForm1->hasErrors() ? 'active': ''?> ">
+        <div class="main-send_side">
+            <div class="main-send_title send-title">
+                <div class="send-title_title">
+                    <h2>
+                        Уважаемые Поставщики!
+                    </h2>
+                </div>
+                <div class="send-title_sub-title">
+                    <h3>
+                        здесь вы можете ознакомиться
+                        с правиламии и связаться с нами
+                    </h3>
+                </div>
+            </div>
+            <div class="main-send_body send-body">
+                <div class="send-body_title">
+                    <h4>
+                        Заголовок
+                    </h4>
+                </div>
+                <div class="send-body_text">
+                    <p>
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                        является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+                        безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+                        для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять
+                        веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                        публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время,
+                        программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem
+                        Ipsum.
+                    </p>
+                </div>
+                <div class="send-body_title">
+                    <h4>
+                        Заголовок
+                    </h4>
+                </div>
+                <div class="send-body_text">
+                    <p>
+                        Тел: +7 (222) 333-44-55
+                    </p>
+                    <p>
+                        Тел: +7 (222) 333-44-55
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="main-send_side ">
+            <?php $form = ActiveForm::begin(
+                [   'action' => '/send1',
+                    'options' => [
+                        'class' => 'send-form'
+                    ]
+                ]); ?>
+            <div class="send-form_wrapper">
+                <?= $form->field($sendForm1, 'name')->textInput(['class' => 'send-form_input', 'placeholder' => "Имя"])->label(''); ?>
+                <?= $form->field($sendForm1, 'surname')->textInput(['class' => 'send-form_input', 'placeholder' => "Фамилия"])->label(''); ?>
+                <?= $form->field($sendForm1, 'orgName')->textInput(['class' => 'send-form_input', 'placeholder' => "Наименование Организации"])->label(''); ?>
+                <?= $form->field($sendForm1, 'contactFace')->textInput(['class' => 'send-form_input', 'placeholder' => "Контактное лицо"])->label(''); ?>
+                <?= $form->field($sendForm1, 'phone')->textInput(['class' => 'send-form_input', 'placeholder' => "Телефон"])->label(''); ?>
+                <?= $form->field($sendForm1, 'email')->textInput(['class' => 'send-form_input', 'placeholder' => "email"])->label(''); ?>
+            </div>
+
+            <div class='send-form_wrapper send-form_wrapper--row'>
+                <input class='send-form_btn' type="submit" value="Отправить">
+                <div class="send-form_btn">
+                    Загрузить КП
+                    <?= $form->field($sendForm1, 'file')->fileInput(['class' =>  'inner-input'])->label(''); ?>
+                </div>
+
+            </div>
+            <?php ActiveForm::end(); ?>
+
+        </div>
+    </div>
+    <div class="main-send main-send--gov <?= $sendForm2->hasErrors() ? 'active': ''?> ">
+        <div class="main-send_side">
+            <div class="main-send_title send-title">
+                <div class="send-title_title">
+                    <h2>
+                        Уважаемые партнеры! (Госзакуп)
+                    </h2>
+                </div>
+                <div class="send-title_sub-title">
+                    <h3>
+                        здесь вы можете ознакомиться
+                        с правиламии и связаться с нами
+                    </h3>
+                </div>
+            </div>
+            <div class="main-send_body send-body">
+                <div class="send-body_title">
+                    <h4>
+                        Заголовок
+                    </h4>
+                </div>
+                <div class="send-body_text">
+                    <p>
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                        является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+                        безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+                        для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять
+                        веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                        публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время,
+                        программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem
+                        Ipsum.
+                    </p>
+                </div>
+                <div class="send-body_title">
+                    <h4>
+                        Заголовок
+                    </h4>
+                </div>
+                <div class="send-body_text">
+                    <p>
+                        Тел: +7 (222) 333-44-55
+                    </p>
+                    <p>
+                        Тел: +7 (222) 333-44-55
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="main-send_side ">
+            <?php $form = ActiveForm::begin(
+                [   'action' => '/send2',
+                    'options' => [
+                        'class' => 'send-form'
+                    ]
+                ]); ?>
+            <div class="send-form_wrapper">
+                <?= $form->field($sendForm2, 'name')->textInput(['class' => 'send-form_input', 'placeholder' => "Имя"])->label(''); ?>
+                <?= $form->field($sendForm2, 'surname')->textInput(['class' => 'send-form_input', 'placeholder' => "Фамилия"])->label(''); ?>
+                <?= $form->field($sendForm2, 'orgName')->textInput(['class' => 'send-form_input', 'placeholder' => "Наименование Организации"])->label(''); ?>
+                <?= $form->field($sendForm2, 'contactFace')->textInput(['class' => 'send-form_input', 'placeholder' => "Контактное лицо"])->label(''); ?>
+                <?= $form->field($sendForm2, 'phone')->textInput(['class' => 'send-form_input', 'placeholder' => "Телефон"])->label(''); ?>
+                <?= $form->field($sendForm2, 'email')->textInput(['class' => 'send-form_input', 'placeholder' => "email"])->label(''); ?>
+            </div>
+
+            <div class='send-form_wrapper send-form_wrapper--row'>
+                <input class='send-form_btn' type="submit" value="Отправить">
+                <div class="send-form_btn">
+                    Загрузить КП
+                    <?= $form->field($sendForm2, 'file')->fileInput(['class' =>  'inner-input'])->label(''); ?>
+                </div>
+
+            </div>
+            <?php ActiveForm::end(); ?>
 
         </div>
     </div>
