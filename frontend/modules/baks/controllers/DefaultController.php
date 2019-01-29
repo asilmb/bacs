@@ -54,7 +54,7 @@ class DefaultController extends Controller
 
         $sendForm = new SendForm();
         $body = Yii::$app->request->getBodyParam($sendForm->formName());
-        $sendForm->load($body);
+        $sendForm->load($body, '');
         $sendForm->validate();
         $sendForm->file = UploadedFile::getInstance($sendForm, 'file');
         if ($sendForm->hasErrors()) {
