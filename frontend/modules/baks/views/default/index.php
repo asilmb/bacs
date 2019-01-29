@@ -271,7 +271,7 @@ use yii\widgets\ActiveForm;
 
         </div>
     </div>
-    <div class="catalog-views_close-btn"><p>Закрыть </p><span class="close"></span></div>
+    <div class="catalog-views_close-btn <?= !($sendForm->hasErrors() || $sendForm1->hasErrors() || $sendForm2->hasErrors()) ? 'active': ''?>"><p>Закрыть </p><span class="close"></span></div>
 </div>
 <div class="section-catalog section clearfix" id=collection>
     <div class="catalog-present active">
