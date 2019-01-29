@@ -62,7 +62,6 @@ class DefaultController extends Controller
 
         $mailRequest = Yii::$app->mailer->compose()
             ->setFrom('manager@mybaks.kz')
-//            ->setTo('asilbekmubarakov@mail.ru')
             ->setTo($sendForm->email)
             ->setSubject('Информация с сайта')
             ->setHtmlBody(
