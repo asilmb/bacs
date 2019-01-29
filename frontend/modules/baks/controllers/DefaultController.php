@@ -79,7 +79,15 @@ class DefaultController extends Controller
             }
         }
         $mailResponse = $mailRequest->send();
-        unlink( Yii::getAlias('@frontend/web') . '/' . $sendForm->file->baseName . '.' . $sendForm->file->extension);
-        return $this->redirect('/');
+        if (!empty($sendForm->file)) {
+            unlink( Yii::getAlias('@frontend/web') . '/' . $sendForm->file->baseName . '.' . $sendForm->file->extension);
+        }
+        if($mailResponse){
+            return $this->redirect('/');
+        } else{
+            $sendForm->addError('email', 'send is failed');
+            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm'));
+        }
+
     }
 }
