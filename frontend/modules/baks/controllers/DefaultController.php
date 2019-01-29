@@ -56,7 +56,7 @@ class DefaultController extends Controller
         $body = Yii::$app->request->getBodyParam($sendForm->formName());
         $sendForm->load($body, '');
         $sendForm->validate();
-        $sendForm->file = UploadedFile::getInstance($sendForm, 'file');
+
         if ($sendForm->hasErrors()) {
             return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm'));
         }
@@ -72,8 +72,7 @@ class DefaultController extends Controller
                 '<p>' . $sendForm->email . '</p>',
                 '<p>' . $sendForm->contactFace . '</p>',
                 '<p>' . $sendForm->phone . '</p>');
-
-
+        $sendForm->file = UploadedFile::getInstance($sendForm, 'file');
         if (!empty($sendForm->file)) {
             $mailRequest->attach($sendForm->file->tempName);
         }

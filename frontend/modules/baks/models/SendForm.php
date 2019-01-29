@@ -19,7 +19,7 @@ class SendForm extends Model
     {
         return [
             [['name', 'surname', 'orgName', 'contactFace', 'phone', 'email'], 'required'],
-            [['file'], 'file', 'skipOnEmpty' => false, 'extensions' => '*'],
+            [['file'], 'file', 'skipOnEmpty' => true, 'extensions' => '*'],
         ];
     }
 
