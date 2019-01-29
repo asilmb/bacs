@@ -24,7 +24,7 @@ class CollectionForm extends Model
     public function rules()
     {
         return [
-            [['desc', 'brand', 'color', 'brandCountry', 'madeIn', 'collection','composition', 'collectionType', 'size', 'price'], 'required'],
+            [[ 'collectionType'], 'required'],
 
         ];
     }
