@@ -51,7 +51,6 @@ class DefaultController extends Controller
         $stocks = \App::$domain->finance->stock->all();
 
 
-
         $sendForm = new SendForm();
         $body = Yii::$app->request->getBodyParam($sendForm->formName());
         $sendForm->load($body, '');
@@ -60,10 +59,11 @@ class DefaultController extends Controller
         if ($sendForm->hasErrors()) {
             return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm'));
         }
+
         $mailRequest = Yii::$app->mailer->compose()
             ->setFrom('manager@mybaks.kz')
-            ->setTo('asilbekmubarakov@mail.ru')
-//            ->setTo($sendForm->email)
+//            ->setTo('asilbekmubarakov@mail.ru')
+            ->setTo($sendForm->email)
             ->setSubject('Информация с сайта')
             ->setHtmlBody(
                 '<p>' . $sendForm->name . '</p>',
@@ -74,10 +74,12 @@ class DefaultController extends Controller
                 '<p>' . $sendForm->phone . '</p>');
         $sendForm->file = UploadedFile::getInstance($sendForm, 'file');
         if (!empty($sendForm->file)) {
-            $mailRequest->attach($sendForm->file->tempName);
+            if ($sendForm->upload()) {
+                $mailRequest->attach( Yii::getAlias('@frontend/web') . '/'. $sendForm->file->baseName . '.' . $sendForm->file->extension);
+            }
         }
         $mailResponse = $mailRequest->send();
-
-        return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm'));
+        unlink( Yii::getAlias('@frontend/web') . '/' . $sendForm->file->baseName . '.' . $sendForm->file->extension);
+        return $this->redirect('/');
     }
 }
