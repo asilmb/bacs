@@ -494,8 +494,7 @@ use yii\widgets\ActiveForm;
                         src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae94648661b7a08616f044e9b0500b5e8e52886edeb1d32ca395d2c3b70e77048&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
             <div class="map-geo_yandex karagandy">
-                <script type="text/javascript" charset="utf-8" async
-                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5c65a68098e62c67b3dad5fc5ff02623a52e2e217c59c3dd8bd3f31aa66274f1&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e971fac8281e3d62359b09a8189e8d104b2605d025b0d5238e47ae0b4ae718b&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </div>
     </div>
