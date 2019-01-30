@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".section-main .owl-carousel").owlCarousel({
             navText: ["", ""],
-            loop: true,
+            loop: false,
             margin: 0,
             nav: true,
             items: 1,

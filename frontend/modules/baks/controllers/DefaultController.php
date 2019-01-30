@@ -26,12 +26,12 @@ class DefaultController extends Controller
         $travelCollection = \App::$domain->finance->collection->all($query3);
 
         $stocks = \App::$domain->finance->stock->all();
+        $gallery = \App::$domain->finance->gallery->all();
 
-        \App::$domain->navigation->alert->create('yyyy2w', Alert::TYPE_SUCCESS);
         $sendForm = new SendForm();
         $sendForm1 = new SendForm();
         $sendForm2 = new SendForm();
-        return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm','sendForm1','sendForm2'));
+        return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm', 'sendForm1', 'sendForm2', 'gallery'));
     }
 
     /**
@@ -51,7 +51,7 @@ class DefaultController extends Controller
         $query3->where('collectionType', CollectionTypeEnum::TRAVEL);
         $travelCollection = \App::$domain->finance->collection->all($query3);
         $stocks = \App::$domain->finance->stock->all();
-
+        $gallery = \App::$domain->finance->gallery->all();
 
         $sendForm = new SendForm();
         $sendForm1 = new SendForm();
@@ -62,7 +62,7 @@ class DefaultController extends Controller
         $sendForm->validate();
 
         if ($sendForm->hasErrors()) {
-            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm','sendForm1','sendForm2'));
+            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm', 'sendForm1', 'sendForm2', 'gallery'));
         }
 
         $mailRequest = Yii::$app->mailer->compose()
@@ -79,21 +79,22 @@ class DefaultController extends Controller
         $sendForm->file = UploadedFile::getInstance($sendForm, 'file');
         if (!empty($sendForm->file)) {
             if ($sendForm->upload()) {
-                $mailRequest->attach( Yii::getAlias('@frontend/web') . '/'. $sendForm->file->baseName . '.' . $sendForm->file->extension);
+                $mailRequest->attach(Yii::getAlias('@frontend/web') . '/' . $sendForm->file->baseName . '.' . $sendForm->file->extension);
             }
         }
         $mailResponse = $mailRequest->send();
         if (!empty($sendForm->file)) {
-            unlink( Yii::getAlias('@frontend/web') . '/' . $sendForm->file->baseName . '.' . $sendForm->file->extension);
+            unlink(Yii::getAlias('@frontend/web') . '/' . $sendForm->file->baseName . '.' . $sendForm->file->extension);
         }
-        if($mailResponse){
+        if ($mailResponse) {
             return $this->redirect('/');
-        } else{
+        } else {
             $sendForm->addError('email', 'send is failed');
-            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm', 'sendForm1','sendForm2'));
+            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm', 'sendForm1', 'sendForm2', 'gallery'));
         }
 
     }
+
     /**
      *
      * @var UploadedFile $sendForm ->file
@@ -111,6 +112,7 @@ class DefaultController extends Controller
         $query3->where('collectionType', CollectionTypeEnum::TRAVEL);
         $travelCollection = \App::$domain->finance->collection->all($query3);
         $stocks = \App::$domain->finance->stock->all();
+        $gallery = \App::$domain->finance->gallery->all();
 
         $sendForm = new SendForm();
         $sendForm1 = new SendForm();
@@ -122,7 +124,7 @@ class DefaultController extends Controller
         $sendForm1->validate();
 
         if ($sendForm1->hasErrors()) {
-            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm', 'sendForm1','sendForm2'));
+            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm', 'sendForm1', 'sendForm2', 'gallery'));
         }
 
         $mailRequest = Yii::$app->mailer->compose()
@@ -139,21 +141,22 @@ class DefaultController extends Controller
         $sendForm1->file = UploadedFile::getInstance($sendForm1, 'file');
         if (!empty($sendForm1->file)) {
             if ($sendForm1->upload()) {
-                $mailRequest->attach( Yii::getAlias('@frontend/web') . '/'. $sendForm1->file->baseName . '.' . $sendForm1->file->extension);
+                $mailRequest->attach(Yii::getAlias('@frontend/web') . '/' . $sendForm1->file->baseName . '.' . $sendForm1->file->extension);
             }
         }
         $mailResponse = $mailRequest->send();
         if (!empty($sendForm1->file)) {
-            unlink( Yii::getAlias('@frontend/web') . '/' . $sendForm1->file->baseName . '.' . $sendForm1->file->extension);
+            unlink(Yii::getAlias('@frontend/web') . '/' . $sendForm1->file->baseName . '.' . $sendForm1->file->extension);
         }
-        if($mailResponse){
+        if ($mailResponse) {
             return $this->redirect('/');
-        } else{
+        } else {
             $sendForm1->addError('email', 'send is failed');
-            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm', 'sendForm1','sendForm2'));
+            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm', 'sendForm1', 'sendForm2', 'gallery'));
         }
 
     }
+
     /**
      *
      * @var UploadedFile $sendForm ->file
@@ -171,7 +174,7 @@ class DefaultController extends Controller
         $query3->where('collectionType', CollectionTypeEnum::TRAVEL);
         $travelCollection = \App::$domain->finance->collection->all($query3);
         $stocks = \App::$domain->finance->stock->all();
-
+        $gallery = \App::$domain->finance->gallery->all();
 
         $sendForm = new SendForm();
         $sendForm1 = new SendForm();
@@ -181,7 +184,7 @@ class DefaultController extends Controller
         $sendForm2->validate();
 
         if ($sendForm2->hasErrors()) {
-            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm', 'sendForm1','sendForm2'));
+            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm', 'sendForm1', 'sendForm2', 'gallery'));
         }
 
         $mailRequest = Yii::$app->mailer->compose()
@@ -198,18 +201,18 @@ class DefaultController extends Controller
         $sendForm2->file = UploadedFile::getInstance($sendForm2, 'file');
         if (!empty($sendForm2->file)) {
             if ($sendForm2->upload()) {
-                $mailRequest->attach( Yii::getAlias('@frontend/web') . '/'. $sendForm2->file->baseName . '.' . $sendForm2->file->extension);
+                $mailRequest->attach(Yii::getAlias('@frontend/web') . '/' . $sendForm2->file->baseName . '.' . $sendForm2->file->extension);
             }
         }
         $mailResponse = $mailRequest->send();
         if (!empty($sendForm2->file)) {
-            unlink( Yii::getAlias('@frontend/web') . '/' . $sendForm2->file->baseName . '.' . $sendForm2->file->extension);
+            unlink(Yii::getAlias('@frontend/web') . '/' . $sendForm2->file->baseName . '.' . $sendForm2->file->extension);
         }
-        if($mailResponse){
+        if ($mailResponse) {
             return $this->redirect('/');
-        } else{
+        } else {
             $sendForm2->addError('email', 'send is failed');
-            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm', 'sendForm1','sendForm2'));
+            return $this->render('index', compact('travelCollection', 'menCollection', 'womenCollection', 'stocks', 'sendForm', 'sendForm1', 'sendForm2', 'gallery'));
         }
 
     }

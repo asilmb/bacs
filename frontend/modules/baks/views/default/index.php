@@ -10,18 +10,12 @@ use yii\widgets\ActiveForm;
 <div class="section-main section clearfix" id="to-custumers">
     <div class="main-present <?= !($sendForm->hasErrors() || $sendForm1->hasErrors() || $sendForm2->hasErrors()) ? 'active': ''?>">
         <div class="owl-carousel owl-round-pagination">
-            <a class="owl-carousel__item">
-                <img src="/images/main-present-background.png" alt="">
-                <div class="main-present_play-btn"></div>
-            </a>
-            <a class="owl-carousel__item">
-                <img src="/images/main-present-background.png" alt="">
-                <div class="main-present_play-btn"></div>
-            </a>
-            <a class="owl-carousel__item">
-                <img src="/images/main-present-background.png" alt="">
-                <div class="main-present_play-btn"></div>
-            </a>
+            <?php foreach ($gallery as $itemX):?>
+                <a class="owl-carousel__item">
+                    <img src="/images/gallery/<?= $itemX->image ?>" alt="">
+                    <div class="main-present_play-btn"></div>
+                </a>
+            <?php endforeach;?>
         </div>
         <div class="main-present_title present-title">
             <div class="present-title_title">
