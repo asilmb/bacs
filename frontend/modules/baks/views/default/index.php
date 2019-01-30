@@ -381,17 +381,15 @@ use yii\widgets\ActiveForm;
         <div class="section-about_area_info">
             <img src="/images/about-label.png" class="section-about_area-label">
             <p class="section-about_area-text">
-                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-                вэб-дизайне. Lorem Ipsum является
-                стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-                создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
-                Lorem
-                Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный
-                дизайн.
-                Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х
-                годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах
-                которых
+                <p>
+                Baks Accessories создана в 2002 году.
+            </p>
+                    <p>  Мы предлагаем высококачественную продукцию кожаных и галантерейных аксессуаров известных мировых марок производства Турции, Китая, Франции, Германии и России, каждая из которых имеет свою целевую аудиторию, ценовой сегмент, уникальные особенности, что позволяет удовлетворить потребности практически любого покупателя! Ассортимент и коллекции постоянно обновляются следуя модным тенденциям. Выбирая нашу продукцию Вы получаете гарантию качества, хорошее настроение и индивидуальность!
 
+                    </p>
+            <p>
+                Выбирая ЛУЧШЕЕ — выбирай BAKS!
+            </p>
             </p>
         </div>
         <img class="section-about_area-photo" src="/images/about-photo.png" alt="">
@@ -489,11 +487,11 @@ use yii\widgets\ActiveForm;
                 <p class="geo-cities_city karagandy active">Караганда</p>
                 <p class="geo-cities_city astana ">Темиртау</p>
             </div>
-            <div class="map-geo_yandex astana active">
+            <div class="map-geo_yandex astana ">
                 <script type="text/javascript" charset="utf-8" async
                         src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae94648661b7a08616f044e9b0500b5e8e52886edeb1d32ca395d2c3b70e77048&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
-            <div class="map-geo_yandex karagandy">
+            <div class="map-geo_yandex karagandy active">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e971fac8281e3d62359b09a8189e8d104b2605d025b0d5238e47ae0b4ae718b&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </div>
