@@ -9,7 +9,6 @@ use yii2lab\misc\yii\grid\TitleColumn;
 use yii2lab\extension\web\grid\ActionColumn;
 
 $baseUrl = $this->context->getBaseUrl();
-
 $columns = [
     [
         'attribute' => 'id',
@@ -35,6 +34,14 @@ $columns = [
         'attribute' => 'price',
         'label' => Yii::t('finance/collection', 'price'),
     ],
+    [
+        'attribute' => 'image',
+        'label' => 'Миниатюра',
+		'value' => function ($data) {
+            return $this->context->renderPartial('mini',compact('data'));
+        },
+		'format'=>'html'
+    ],
 	[
 		'class' => ActionColumn::class,
 		'template' => '{view}{update} {delete}'
@@ -42,7 +49,12 @@ $columns = [
 ];
 
 ?>
-
+	<style>
+		.backend-mini{
+			height: auto;
+			width: 10em;
+		}
+	</style>
 <?= GridView::widget([
 	'dataProvider' => $dataProvider,
 	'layout' => '{summary}{items}',

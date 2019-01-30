@@ -1,0 +1,1 @@
+<img class="backend-mini" src='<?= env('url.frontend') . "images/collections/" . $data->collectionType . "/" . $data->image?>'/>

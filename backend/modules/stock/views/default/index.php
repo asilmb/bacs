@@ -35,6 +35,14 @@ $columns = [
         'attribute' => 'stockType',
         'label' => Yii::t('finance/stock', 'stockType'),
     ],
+    [
+        'attribute' => 'image',
+        'label' => 'Миниатюра',
+        'value' => function ($data) {
+            return $this->context->renderPartial('mini',compact('data'));
+        },
+        'format'=>'html'
+    ],
 	[
 		'class' => ActionColumn::class,
 		'template' => '{view}{update} {delete}'
@@ -42,7 +50,12 @@ $columns = [
 ];
 
 ?>
-
+	<style>
+		.backend-mini{
+			height: auto;
+			width: 10em;
+		}
+	</style>
 <?= GridView::widget([
 	'dataProvider' => $dataProvider,
 	'layout' => '{summary}{items}',
