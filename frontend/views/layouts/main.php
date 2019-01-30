@@ -65,9 +65,9 @@ AppAsset::register($this);
 </div>
 <div class="navigation-vertical navigation-vertical-right">
     <div class="navigation-vertical_social social-section">
-        <a href="#" class='social-section-item facebook'></a>
-        <a href="https://www.instagram.com/baks_accessories" class='social-section-item inst'></a>
-        <a href="https://vk.com/club88806084" class='social-section-item vk'></a>
+        <a href="#" class='social-section-item facebook' target="_blank"></a>
+        <a href="https://www.instagram.com/baks_accessories" class='social-section-item inst' target="_blank"></a>
+        <a href="https://vk.com/club88806084" class='social-section-item vk' target="_blank"></a>
     </div>
     <div class="navigation-vertical_footer">
         <img src="/images/menu/footer.png">
