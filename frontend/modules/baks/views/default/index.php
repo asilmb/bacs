@@ -488,9 +488,7 @@ use yii\widgets\ActiveForm;
                 <p class="geo-cities_city astana ">Темиртау</p>
             </div>
             <div class="map-geo_yandex astana ">
-                <script type="text/javascript" charset="utf-8" async
-                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae94648661b7a08616f044e9b0500b5e8e52886edeb1d32ca395d2c3b70e77048&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
-            </div>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4f08b96a91e8edc08ecf2279ca751f8f0deec6af7deaba0dbdaa492cfd155bed&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>            </div>
             <div class="map-geo_yandex karagandy active">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e971fac8281e3d62359b09a8189e8d104b2605d025b0d5238e47ae0b4ae718b&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
