@@ -34,6 +34,7 @@ $(document).ready(function () {
             autoplay: true,
             autoplayTimeout: 3000,
             autoplayHoverPause:true,
+
             responsive: {
                 0: {
                     items: 1
@@ -48,6 +49,7 @@ $(document).ready(function () {
         }
     );
 });
+
 $(document).ready(function () {
     $(".catalog-present-collections_selector.girl").hover(function () {
         $(".catalog-present-collections_item").removeClass("active");
