@@ -390,7 +390,7 @@ use yii\widgets\ActiveForm;
             <hr> <hr>
 
                 Выбирая ЛУЧШЕЕ — выбирай BAKS!
-            </p>
+
             </p>
         </div>
         <img class="section-about_area-photo" src="/images/about-photo.png" alt="">
