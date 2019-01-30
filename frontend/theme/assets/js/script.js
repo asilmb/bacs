@@ -133,9 +133,9 @@ $(document).ready(function () {
         $(".custom-catalog").removeClass("active");
         $(".custom-catalog.catalog-travel").addClass('active')
     });
-    $(".catalog-views_close-btn").click(function () {
+    $(".catalog-views .catalog-views_close-btn").click(function () {
         $(".catalog-views").removeClass("active");
-        $(".catalog-views_close-btn").removeClass('active');
+        $(".catalog-views  .catalog-views_close-btn").removeClass('active');
         $(".custom-catalog").removeClass("active");
         $(".catalog-present").addClass('active')
     });
@@ -178,18 +178,27 @@ $(document).ready(function () {
             $('#current-page').append('04')
         }
     })
-
-
+    $(".section-main .catalog-views_close-btn").click(function () {
+        $(".main-send").removeClass("active");
+        $(".section-main .catalog-views_close-btn").removeClass('active');
+        $(".main-present").addClass('active')
+    });
     $(".renter").click(function () {
         $(".main-present").removeClass("active");
+        $(".main-send").removeClass("active");
+        $(".section-main .catalog-views_close-btn").addClass('active');
         $(".main-send--renter").addClass('active')
     });
     $(".gov").click(function () {
         $(".main-present").removeClass("active");
-        $(".main-send--gov").addClass('active')
+        $(".main-send").removeClass("active");
+        $(".section-main .catalog-views_close-btn").addClass('active');
+        $(".main-send--gov").addClass('active');
     });
     $(".provider").click(function () {
         $(".main-present").removeClass("active");
-        $(".main-send--provider").addClass('active')
+        $(".main-send").removeClass("active");
+        $(".section-main .catalog-views_close-btn").addClass('active');
+        $(".main-send--provider").addClass('active');
     });
 });

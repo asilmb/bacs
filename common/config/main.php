@@ -13,6 +13,18 @@ return [
 		'@npm'   => '@vendor/npm-asset',
 	],
 	'components' => [
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+        ],
+        'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.gmail.com',
+                'username' => 'asilbekmubarak@gmail.com',
+                'password' => 'w1iVHTdY',
+                'port' => '465',
+                'encryption' => 'ssl',
+                ],
+
 		'time' => 'yii2lab\extension\time\components\TimeComponent',
 		'language' => 'yii2module\lang\domain\components\Language',
         'user' => [

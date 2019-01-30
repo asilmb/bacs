@@ -1,8 +1,20 @@
 .section-main
+  .catalog-views_close-btn
+    position: absolute
+    top: 3em
+    right: 6em
+    display: none
+    padding: 2px
+    z-index: 100000
+    &:hover
+      background: black
+      color: white
+    &.active
+      display: flex
   .main-present
     height: 55em
-    //display: none
-    display: block
+    display: none
+
     overflow: hidden
     &.active
       display: block
@@ -63,18 +75,6 @@
           margin: 0
           color: #5d5d5d
           font-family: RobotoLight
-.main-send
-  .catalog-views_close-btn
-    position: absolute
-    top: 3em
-    right: 6em
-    display: none
-    padding: 2px
-    &:hover
-      background: black
-      color: white
-    &.active
-      display: flex
 .owl-nav
   position: absolute
   width: 100%
@@ -128,4 +128,79 @@
           right: 19%
           transform: rotate(90deg)
 .main-send
+  background: #faf7f3
+  padding: 6em
   display: none
+  height: 100%
+  box-sizing: border-box
+  &.active
+    display: flex
+  .main-send_side
+    flex-grow: 1
+    flex-basis: 50%
+.send-title
+  width: 75%
+  text-transform: uppercase
+  .send-title_title
+    border-bottom: 1px #b68653 solid
+    h2
+     padding-bottom: 00.5em
+  .send-title_sub-title
+    h3
+      font-size: 2em
+.send-body
+  padding-top: 2em
+  width: 75%
+  .send-body_title
+    padding-bottom: 1em
+  .send-body_text
+    padding-bottom: 2em
+    p
+      font-family: RobotoLight
+.send-form
+  width: 80%
+  padding-top: 4em
+  .send-form_wrapper
+    display: flex
+    flex-direction: column
+    padding-top: 2em
+    &.send-form_wrapper--row
+      flex-direction: row
+    .send-form_btn
+      border: 1px #a36f1b solid
+      padding: 10px 15px
+      background: white
+      margin: 0
+      font-size: 20px
+      color: #a36f1b
+      width: 6em
+      font-family: RobotoCondensed
+      position: relative
+      margin-right: 2em
+      .form-group
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        height: 100%
+        width: 100%
+        box-sizing: border-box
+        .inner-input
+          width: 100%
+          height: 100%
+    .send-form_input
+      padding: 1em
+      padding-left: 0
+      border: none
+      border-bottom: 1px solid #d8d8d8
+      background: transparent
+      width: 100%
+      &:focus
+        outline: none
+      &::placeholder
+        font-family: RobotoLightItalic
+        color: black
+        font-size: 1.2em
+
+
+

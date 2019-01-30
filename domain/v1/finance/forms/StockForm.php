@@ -18,7 +18,7 @@ class StockForm extends Model
     public function rules()
     {
         return [
-            [['title', 'descPresent', 'descFull', 'date'], 'required'],
+            [['stockType'], 'required'],
 
         ];
     }

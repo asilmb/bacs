@@ -3,10 +3,11 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use kartik\alert\Alert;
 use yii2lab\extension\web\helpers\Page;
 use yii2lab\navigation\domain\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
-use yii2lab\navigation\domain\widgets\Alert;
+
 
 AppAsset::register($this);
 
@@ -42,9 +43,9 @@ AppAsset::register($this);
         <div class="menu-section_menu-item"><a href="#contacts" class="menu-section_menu-item">Контакты</a></div>
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section menu-section--main-links">
-        <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item">Госзакуп</a></div>
-        <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item">Поставщикам</a></div>
-        <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item">Арендаторам</a></div>
+        <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item gov">Госзакуп</a></div>
+        <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item provider">Поставщикам</a></div>
+        <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item renter">Арендаторам</a></div>
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section-page-info">
         <div class="menu-section-pagination">
@@ -59,13 +60,14 @@ AppAsset::register($this);
     </div>
 </div>
 <div class="container">
+
     <?= $content ?>
 </div>
 <div class="navigation-vertical navigation-vertical-right">
     <div class="navigation-vertical_social social-section">
         <a href="#" class='social-section-item facebook'></a>
-        <a href="#" class='social-section-item inst'></a>
-        <a href="#" class='social-section-item vk'></a>
+        <a href="https://www.instagram.com/baks_accessories" class='social-section-item inst'></a>
+        <a href="https://vk.com/club88806084" class='social-section-item vk'></a>
     </div>
     <div class="navigation-vertical_footer">
         <img src="/images/menu/footer.png">

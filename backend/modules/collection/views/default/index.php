@@ -11,6 +11,10 @@ use yii2lab\extension\web\grid\ActionColumn;
 $baseUrl = $this->context->getBaseUrl();
 
 $columns = [
+    [
+        'attribute' => 'id',
+        'label' => '#',
+    ],
 	[
 		'attribute' => 'desc',
 		'label' => Yii::t('finance/collection', 'desc'),
