@@ -14,24 +14,9 @@ use yii2mod\markdown\MarkdownEditor;
 <?php $form = ActiveForm::begin(); ?>
 
 <?= $form->field($model, 'title')->textInput(); ?>
-<?= $form->field($model, 'descPresent')->textInput(); ?>
-<?= $form->field($model, 'descFull')->textInput(); ?>
-
-<?= DatePicker::widget([
-'model' => $model,
-'attribute' => 'date',
-'options' => ['placeholder' => 'укажите дату'],
-'pluginOptions' => [
-'autoclose'=>true
-]
-]);
-?>
-<?= $form->field($model, 'stockType')->dropDownList([\App::$domain->finance->stock->getstockTypeList()]); ?>
-
-
-
+<?= $form->field($model, 'desc')->textInput(); ?>
 <div class="form-group">
-	<?= Html::submitButton(Yii::t('action', 'save'), ['class' => 'btn btn-primary']) ?>
+    <?= Html::submitButton(Yii::t('action', 'save'), ['class' => 'btn btn-primary']) ?>
 </div>
-
+<?= $form->field($model, 'image')->hiddenInput()->label(''); ?>
 <?php ActiveForm::end(); ?>

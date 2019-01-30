@@ -1,1 +1,1 @@
-<img class="backend-mini" src='<?= env('url.frontend') . "images/stocks/". $data->image?>'/>
+<img class="backend-mini" src='<?= env('url.frontend') . "images/gallery/". $data->image?>'/>

@@ -2,10 +2,11 @@
 
 namespace backend\modules\gallery\controllers;
 
-use backend\modules\stock\actions\CreateAction;
-use backend\modules\stock\actions\DeleteAction;
-use backend\modules\stock\actions\UpdateAction;
-use domain\v1\finance\forms\StockForm;
+use backend\modules\gallery\actions\CreateAction;
+use backend\modules\gallery\actions\DeleteAction;
+use backend\modules\gallery\actions\UpdateAction;
+use domain\v1\finance\forms\GalleryForm;
+
 use domain\v1\finance\forms\UploadForm;
 use Yii;
 use yii\web\UploadedFile;
@@ -15,7 +16,7 @@ class DefaultController extends Controller
 {
 
     public $serviceName = 'finance.gallery';
-    public $formClass = StockForm::class;
+    public $formClass = GalleryForm::class;
     public $service = 'finance.gallery';
 
     public function actions()

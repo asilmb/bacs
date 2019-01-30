@@ -9,6 +9,7 @@ return [
 
 
     'stock/<action>' => 'stock/default/<action>',
+    'gallery/<action>' => 'gallery/default/<action>',
 	];
 
 

@@ -5,7 +5,7 @@
 use yii\grid\GridView;
 use yii\helpers\Html;
 
-use yii2lab\misc\yii\grid\TitleColumn;
+
 use yii2lab\extension\web\grid\ActionColumn;
 
 $baseUrl = $this->context->getBaseUrl();
@@ -17,23 +17,11 @@ $columns = [
     ],
     [
         'attribute' => 'title',
-        'label' => Yii::t('finance/stock', 'title'),
+        'label' => Yii::t('finance/gallery', 'title'),
     ],
     [
-        'attribute' => 'descPresent',
-        'label' => Yii::t('finance/stock', 'descPresent'),
-    ],
-    [
-        'attribute' => 'descFull',
-        'label' => Yii::t('finance/stock', 'descFull'),
-    ],
-    [
-        'attribute' => 'date',
-        'label' => Yii::t('finance/stock', 'date'),
-    ],
-    [
-        'attribute' => 'stockType',
-        'label' => Yii::t('finance/stock', 'stockType'),
+        'attribute' => 'desc',
+        'label' => Yii::t('finance/gallery', 'desc'),
     ],
     [
         'attribute' => 'image',

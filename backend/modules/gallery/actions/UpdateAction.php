@@ -23,7 +23,7 @@ class UpdateAction extends Action {
                 $model->id = $id;
 				$this->service->$method($id, $model->toArray());
 				\App::$domain->navigation->alert->create(['main', 'update_success'], Alert::TYPE_SUCCESS);
-				return $this->redirect(['/stock']);
+				return $this->redirect(['/gallery']);
 			} catch (UnprocessableEntityHttpException $e){
 				$model->addErrorsFromException($e);
 			}

@@ -33,5 +33,5 @@ use yii2mod\markdown\MarkdownEditor;
 <div class="form-group">
 	<?= Html::submitButton(Yii::t('action', 'save'), ['class' => 'btn btn-primary']) ?>
 </div>
-
+<?= $form->field($model, 'image')->hiddenInput()->label(''); ?>
 <?php ActiveForm::end(); ?>

@@ -18,7 +18,7 @@ class CreateAction extends Action {
 			try{
 			    $entity = $this->runServiceMethod($model->toArray());
 				\App::$domain->navigation->alert->create(['main', 'create_success'], Alert::TYPE_SUCCESS);
-				return $this->redirect('/stock/view?id='.$entity->id);
+				return $this->redirect('/gallery/view?id='.$entity->id);
 			} catch (UnprocessableEntityHttpException $e){
 				$model->addErrorsFromException($e);
 			}
