@@ -6,7 +6,7 @@ use yii2lab\domain\BaseEntity;
 
 
 /**
- * Class CollectionEntity
+ * Class StockEntity
  *
  * @package domain\v1\finance\entities
  *

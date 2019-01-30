@@ -16,10 +16,12 @@ class Domain extends \yii2lab\domain\Domain {
 			'repositories' => [
 				'collection',
                 'stock',
+                'gallery',
 			],
 			'services' => [
 				'collection',
                 'stock',
+                'gallery',
 			],
 		];
 	}

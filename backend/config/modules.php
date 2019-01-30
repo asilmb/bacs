@@ -8,6 +8,7 @@ return [
 	'error' => 'yii2module\error\module\Module',
 	'collection' => 'backend\modules\collection\Module',
     'stock' => 'backend\modules\stock\Module',
+    'gallery' => 'backend\modules\gallery\Module',
 	'offline' => 'yii2module\offline\admin\Module',
 	'dashboard' => [
 		'class' => 'yii2module\dashboard\admin\Module',
