@@ -15,9 +15,11 @@ class UpdateAction extends Action
 
     public function run($id)
     {
-        $this->view->title = Yii::t('main', 'update_title');
         $methodOne = $this->serviceMethodOne;
         $entity = $this->service->$methodOne($id);
+        $this->view->title = Yii::t('finance/collection', $entity->collectionType);
+
+
         $model = $this->createForm($entity->toArray());
         if (Yii::$app->request->isPost && !$model->hasErrors()) {
             try {

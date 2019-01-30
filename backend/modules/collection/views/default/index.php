@@ -51,8 +51,8 @@ $columns = [
 ?>
 	<style>
 		.backend-mini{
-			height: auto;
-			width: 10em;
+            height: 100px;
+            width: auto;
 		}
 	</style>
 <?= GridView::widget([
@@ -61,4 +61,4 @@ $columns = [
 	'columns' => $columns,
 ]); ?>
 
-<?= Html::a(Yii::t('action', 'create'), $baseUrl . 'create', ['class' => 'btn btn-success']) ?>
+<?= Html::a(Yii::t('action', 'create'), $baseUrl . 'create?detect='.$detect, ['class' => 'btn btn-success']) ?>

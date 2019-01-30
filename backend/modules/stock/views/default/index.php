@@ -52,8 +52,8 @@ $columns = [
 ?>
 	<style>
 		.backend-mini{
-			height: auto;
-			width: 10em;
+            height: 100px;
+            width: auto;
 		}
 	</style>
 <?= GridView::widget([

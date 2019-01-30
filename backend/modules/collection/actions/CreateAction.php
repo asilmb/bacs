@@ -11,8 +11,8 @@ class CreateAction extends Action {
 	
 	public $serviceMethod = 'create';
 	
-	public function run() {
-		$this->view->title = Yii::t('main', 'create_title');
+	public function run($detect) {
+		$this->view->title =  Yii::t('finance/collection', $detect);
 		$model =$this->createForm();
 		if(Yii::$app->request->isPost && !$model->hasErrors()) {
 			try{
@@ -23,6 +23,7 @@ class CreateAction extends Action {
 				$model->addErrorsFromException($e);
 			}
 		}
+        $model->collectionType = $detect;
 		return $this->render($this->render, compact('model'));
 	}
 }

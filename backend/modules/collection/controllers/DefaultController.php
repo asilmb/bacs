@@ -36,8 +36,25 @@ class DefaultController extends Controller
         $query = Query::forge();
         $query->where('collectionType', CollectionTypeEnum::MEN);
         $dataProvider = \App::$domain->finance->collection->getDataProvider($query);
-        return $this->render('index', ['dataProvider' => $dataProvider]);
+        return $this->render('index', ['dataProvider' => $dataProvider, 'detect' => CollectionTypeEnum::MEN]);
     }
+
+    public function actionWomen()
+    {
+        $query = Query::forge();
+        $query->where('collectionType', CollectionTypeEnum::WOMEN);
+        $dataProvider = \App::$domain->finance->collection->getDataProvider($query);
+        return $this->render('index', ['dataProvider' => $dataProvider, 'detect' => CollectionTypeEnum::WOMEN]);
+    }
+
+    public function actionTravel()
+    {
+        $query = Query::forge();
+        $query->where('collectionType', CollectionTypeEnum::TRAVEL);
+        $dataProvider = \App::$domain->finance->collection->getDataProvider($query);
+        return $this->render('index', ['dataProvider' => $dataProvider, 'detect' => CollectionTypeEnum::TRAVEL]);
+    }
+
 
     public function actionView($id)
     {
@@ -47,7 +64,7 @@ class DefaultController extends Controller
         if (Yii::$app->request->isPost) {
             $model->image = UploadedFile::getInstance($model, 'image');
             $dateTime = new \DateTime();
-            $model->image->name = $dateTime->getTimestamp(). str_replace(' ', '_', $model->image->name);
+            $model->image->name = $dateTime->getTimestamp() . str_replace(' ', '_', $model->image->name);
             if ($model->upload($path)) {
                 if ($entity->image) {
                     try {
@@ -65,21 +82,5 @@ class DefaultController extends Controller
             $model->image = env('url.frontend') . 'images/collections/' . $entity->collectionType . '/' . $entity->image;
         }
         return $this->render('download', ['model' => $model]);
-    }
-
-    public function actionWomen()
-    {
-        $query = Query::forge();
-        $query->where('collectionType', CollectionTypeEnum::WOMEN);
-        $dataProvider = \App::$domain->finance->collection->getDataProvider($query);
-        return $this->render('index', ['dataProvider' => $dataProvider]);
-    }
-
-    public function actionTravel()
-    {
-        $query = Query::forge();
-        $query->where('collectionType', CollectionTypeEnum::TRAVEL);
-        $dataProvider = \App::$domain->finance->collection->getDataProvider($query);
-        return $this->render('index', ['dataProvider' => $dataProvider]);
     }
 }

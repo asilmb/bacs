@@ -21,7 +21,7 @@ use yii2mod\markdown\MarkdownEditor;
 <?= $form->field($model, 'madeIn')->textInput(); ?>
 <?= $form->field($model, 'collection')->textInput(); ?>
 <?= $form->field($model, 'composition')->textInput(); ?>
-<?= $form->field($model, 'collectionType')->dropDownList([\App::$domain->finance->collection->getCollectionTypeList()]); ?>
+
 <?= $form->field($model, 'size')->textInput(); ?>
 <?= $form->field($model, 'price')->textInput(); ?>
 
@@ -29,5 +29,5 @@ use yii2mod\markdown\MarkdownEditor;
 <div class="form-group">
 	<?= Html::submitButton(Yii::t('action', 'save'), ['class' => 'btn btn-primary']) ?>
 </div>
-
+<?= $form->field($model, 'collectionType')->hiddenInput()->label(''); ?>
 <?php ActiveForm::end(); ?>
