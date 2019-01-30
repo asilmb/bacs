@@ -28,9 +28,12 @@ $(document).ready(function () {
     );
     $(".catalog-views .owl-carousel").owlCarousel({
             navText: ["", ""],
-            loop: false,
+            loop: true,
             margin: 20,
             nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause:true,
             responsive: {
                 0: {
                     items: 1
