@@ -2,6 +2,7 @@
   height: 100%
 .catalog-present
   display: none
+  height: 100%
   &.active
     display: flex
   .catalog-present_comment
@@ -91,3 +92,60 @@
         &:before
           background-position-y: -1.5em
 
+@media (max-width: 1500px)
+  .catalog-present.active
+    position: relative
+  .catalog-present-title
+    position: absolute
+    width: 100%
+    margin: 0 auto
+    top: 0
+    left: 0
+    right: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-left: 0
+  .catalog-present-title .catalog-present-title_sub-title
+    font-size: 1.5em
+  .catalog-present .catalog-present_area.catalog-present_area--right
+    display: flex
+    justify-content: center
+    align-items: center
+  .catalog-present .catalog-present_area.catalog-present_area--left
+    float: left
+    width: 45%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px)
+  .catalog-present.active
+    position: relative
+  .catalog-present-title
+    position: absolute
+    width: 100%
+    margin: 0 auto
+    top: 0
+    left: 0
+    right: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-left: 0
+  .catalog-present-title .catalog-present-title_sub-title
+    font-size: 1.5em
+  .catalog-present .catalog-present_area.catalog-present_area--right
+    display: flex
+    justify-content: center
+    align-items: center
+  .catalog-present .catalog-present_area.catalog-present_area--left
+    float: left
+    width: 45%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
