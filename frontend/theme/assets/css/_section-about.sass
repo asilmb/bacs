@@ -150,18 +150,28 @@
   .map .map-contacts .map-contacts_title
     padding: 1em 0 1em 2em
     text-align: center
+@media (max-width: 1380px)
+  .section
+    width: 75%
 
-@media (min-width: 1025px) and (max-width: 1280px)
+
+@media (max-width: 1280px)
   .map
-    height: 60%
-  .map-geo
-    display: flex
+    height: 100%
     flex-direction: column
+    .map-geo
+      display: flex
+      flex-direction: column
+      flex-basis: 100%
+    .map-contacts
+      display: flex
+      flex-direction: column
+      flex-basis: 100%
+      .map-contacts_title
+        padding: 1em 0 1em 2em
+        text-align: center
   .geo-cities .geo-cities_city
     padding: 1.4em 5em
-  .map .map-contacts
-    display: flex
-    flex-direction: column
   .section-about .section-about_area
     height: 45%
   img.section-about_area-photo
@@ -175,12 +185,49 @@
   .section-about .section-about_area .section-about_area_info .section-about_area-text
     padding-left: 0
   .contacts
+
+    padding: 1em 1.5em 0 3.5em
+  .contacts .contacts_city .contacts_city-name:before
+    left: -1.5em;
+  .contacts .contacts_add-info p
+    font-size: 0.8em
+    font-weight: bold
+
+@media (max-width: 1180px)
+  .map
+    height: 100%
+    flex-direction: column
+    .map-geo
+      display: flex
+      flex-direction: column
+      flex-basis: 100%
+    .map-contacts
+      display: flex
+      flex-direction: column
+      flex-basis: 100%
+      .map-contacts_title
+        padding: 1em 0 1em 2em
+        text-align: center
+  .geo-cities .geo-cities_city
+    padding: 1.4em 5em
+  .section-about .section-about_area
+    height: 45%
+  img.section-about_area-photo
+    width: 50%
+    height: auto
+  .section-about .section-about_area .section-about_area_info .section-about_area-label
+    width: 35%
+    height: auto
+    opacity: 0.2
+    position: absolute
+  .section-about .section-about_area .section-about_area_info .section-about_area-text
+    padding-left: 0
+  .contacts
+
     padding: 1em 1.5em 0 3.5em
   .contacts .contacts_city .contacts_city-name:before
     left: -1.5em
   .contacts .contacts_add-info p
     font-size: 0.8em
     font-weight: bold
-  .map .map-contacts .map-contacts_title
-    padding: 1em 0 1em 2em
-    text-align: center
+
