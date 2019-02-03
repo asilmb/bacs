@@ -25,7 +25,7 @@
         height: 237px
 .map
   display: flex
-  height: 55%
+  height: 35em
   .map-contacts
     flex-grow: 1
     flex-basis: 40%
@@ -117,6 +117,9 @@
       color: #a3701c
     &:hover
       color: #a3701c
+@media (max-width: 1560px)
+  .map
+    height: 70%
 @media (max-width: 1500px)
   .map
     height: 60%
@@ -150,12 +153,13 @@
   .map .map-contacts .map-contacts_title
     padding: 1em 0 1em 2em
     text-align: center
-@media (max-width: 1380px)
-  .section
-    width: 75%
-
+@media (max-width: 1390px)
+  .map
+    height: 70%
 
 @media (max-width: 1280px)
+  .section-about_map.map
+    display: block
   .map
     height: 100%
     flex-direction: column
@@ -186,9 +190,9 @@
     padding-left: 0
   .contacts
 
-    padding: 1em 1.5em 0 3.5em
+    padding: 1em 1.5em 30px 3.5em
   .contacts .contacts_city .contacts_city-name:before
-    left: -1.5em;
+    left: -1.5em
   .contacts .contacts_add-info p
     font-size: 0.8em
     font-weight: bold
