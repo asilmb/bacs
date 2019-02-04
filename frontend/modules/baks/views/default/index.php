@@ -389,82 +389,64 @@ use yii\widgets\ActiveForm;
     </div>
     <div class="section-about_map map">
         <div class="map-contacts">
-            <h4 class="map-contacts_title">Контакты</h4>
+            <h4 class="map-contacts_title" id="contacts">Контакты</h4>
             <div class="map-contacts_info contacts">
                 <div class="contacts_info">
-                    <p class="contacts_info-item"> +7 (777) 252-77-52</p>
+                    <p class="contacts_info-item"> +7 (702) 609 50 00</p>
                     <p class="contacts_info-item"> +7 (777) 252-77-52</p>
                     <p class="contacts_info-item"> Pochta@mail.ru</p>
                 </div>
                 <div class="contacts_city">
-                    <p class="contacts_city-name">г.Астана:</p>
+                    <p class="contacts_city-name">г.Караганда:</p>
                     <div class="contacts_city-info-table">
 
-                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-                            2 этаж</p>
+                        <p class="field">ТРЦ "City Mall" 2 этаж</p>
                         <div class="dots">
                         </div>
-                        <p class="field">тел +7(7172)79-09-49</p>
+                        <p class="field">тел +7(702) 609 50 00</p>
+
+                    </div>
+                    <div class="contacts_city-info-table">
+
+                        <p class="field">ТД "ЦУМ", 1 этаж, Бутик N148</p>
+                        <div class="dots">
+                        </div>
+                        <p class="field">тел +7(702) 609 50 00</p>
+
+                    </div>
+                    <div class="contacts_city-info-table">
+
+                        <p class="field">ТД "Абзал", 1 этаж, Бутик N25</p>
+                        <div class="dots">
+                        </div>
+                        <p class="field">тел +7(702) 609 50 00</p>
+
+                    </div>
+                    <div class="contacts_city-info-table">
+
+                        <p class="field">ТГ "Таир-2", 1 этаж, Бутик N22</p>
+                        <div class="dots">
+                        </div>
+                        <p class="field">тел +7(702) 609 50 00</p>
+
+                    </div>
+                    <div class="contacts_city-info-table">
+
+                        <p class="field">ТД "Magic", 1 этаж, Бутик N15</p>
+                        <div class="dots">
+                        </div>
+                        <p class="field">тел +7(702) 609 50 00</p>
 
                     </div>
                 </div>
                 <div class="contacts_city">
-                    <p class="contacts_city-name">г.Астана:</p>
+                    <p class="contacts_city-name">г.Темиртау:</p>
                     <div class="contacts_city-info-table">
 
-                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-                            2 этаж</p>
+                        <p class="field">ТД «Корзина» 2 этаж бутик №22</p>
                         <div class="dots">
                         </div>
-                        <p class="field">тел +7(7172)79-09-49</p>
-
-                    </div>
-                    <div class="contacts_city-info-table">
-
-                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-                            2 этаж</p>
-                        <div class="dots">
-                        </div>
-                        <p class="field">тел +7(7172)79-09-49</p>
-
-                    </div>
-                    <div class="contacts_city-info-table">
-
-                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-                            2 этаж</p>
-                        <div class="dots">
-                        </div>
-                        <p class="field">тел +7(7172)79-09-49</p>
-
-                    </div>
-                    <div class="contacts_city-info-table">
-
-                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-                            2 этаж</p>
-                        <div class="dots">
-                        </div>
-                        <p class="field">тел +7(7172)79-09-49</p>
-
-                    </div>
-                    <div class="contacts_city-info-table">
-
-                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-                            2 этаж</p>
-                        <div class="dots">
-                        </div>
-                        <p class="field">тел +7(7172)79-09-49</p>
-
-                    </div>
-                </div>
-                <div class="contacts_city">
-                    <p class="contacts_city-name">г.Астана:</p>
-                    <div class="contacts_city-info-table">
-
-                        <p class="field">ТРЦ «Мега», Кургальджинское шоссе 1,
-                            2 этаж</p>
-                        <div class="dots">
-                        </div>
-                        <p class="field">тел +7(7172)79-09-49</p>
+                        <p class="field">тел +7(702) 609 50 00</p>
 
                     </div>
                 </div>
