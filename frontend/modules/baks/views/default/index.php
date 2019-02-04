@@ -13,7 +13,6 @@ use yii\widgets\ActiveForm;
             <?php foreach ($gallery as $itemX):?>
                 <a class="owl-carousel__item">
                     <img src="/images/gallery/<?= $itemX->image ?>" alt="">
-                    <div class="main-present_play-btn"></div>
                 </a>
             <?php endforeach;?>
         </div>
