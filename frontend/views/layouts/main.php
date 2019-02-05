@@ -20,6 +20,12 @@ AppAsset::register($this);
     <div class="navigation-vertical_logo">
         <img src="/images/menu/logo.png">
     </div>
+    <div class="menu__icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <div class="navigation-vertical_logo_menu-section menu-section">
         <div class="menu-section_menu-item girl">
             <a href="#collection">
