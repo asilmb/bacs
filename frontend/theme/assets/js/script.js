@@ -1,18 +1,24 @@
 $(document).ready(function () {
     $(".section-main .owl-carousel").owlCarousel({
             navText: ["", ""],
-            loop: false,
+        loop: true,
             margin: 0,
             nav: true,
             items: 1,
             responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
         }
     );
     $(".section-stock .owl-carousel").owlCarousel({
             navText: ["", ""],
-            loop: false,
+        loop: true,
             margin: 10,
             nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
             responsive: {
                 0: {
                     items: 1
