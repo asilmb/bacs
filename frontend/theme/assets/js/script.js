@@ -166,7 +166,11 @@ $(document).ready(function () {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 500);
+        if ($(window).width() <= 720) {
+            $('body,html').animate({scrollTop: top -100}, 500)
+        } else {
+            $('body,html').animate({scrollTop: top}, 500);
+        }
     });
 
 
@@ -201,25 +205,34 @@ $(document).ready(function () {
     })
     $(".section-main .catalog-views_close-btn").click(function () {
         $(".main-send").removeClass("active");
-        $(".section-main .catalog-views_close-btn").removeClass('active');
+        if ($(window).width() >= 720) {
+            $(".section-main .catalog-views_close-btn").removeClass('active');
+        }
+
         $(".main-present").addClass('active')
     });
     $(".renter").click(function () {
         $(".main-present").removeClass("active");
         $(".main-send").removeClass("active");
-        $(".section-main .catalog-views_close-btn").addClass('active');
+        if ($(window).width() >= 720) {
+            $(".section-main .catalog-views_close-btn").removeClass('active');
+        }
         $(".main-send--renter").addClass('active')
     });
     $(".gov").click(function () {
         $(".main-present").removeClass("active");
         $(".main-send").removeClass("active");
-        $(".section-main .catalog-views_close-btn").addClass('active');
+        if ($(window).width() >= 720) {
+            $(".section-main .catalog-views_close-btn").removeClass('active');
+        }
         $(".main-send--gov").addClass('active');
     });
     $(".provider").click(function () {
         $(".main-present").removeClass("active");
         $(".main-send").removeClass("active");
-        $(".section-main .catalog-views_close-btn").addClass('active');
+        if ($(window).width() >= 720) {
+            $(".section-main .catalog-views_close-btn").removeClass('active');
+        }
         $(".main-send--provider").addClass('active');
     });
 
@@ -235,8 +248,9 @@ $(document).ready(function () {
 
     $('.menu__icon').on('click', function () {
         $(this).closest('.navigation-vertical-left').toggleClass('menu_state_open');
-
     });
-
+    $('.menu-section').on('click', function () {
+        $(this).closest('.navigation-vertical-left').toggleClass('menu_state_open');
+    });
 
 });
