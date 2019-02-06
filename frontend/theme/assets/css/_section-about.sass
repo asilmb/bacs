@@ -233,8 +233,13 @@
     font-size: 0.8em
     font-weight: bold
 @media only screen and (min-width: 320px) and (max-width: 768px)
-  .section-about_area
+  .section-about .section-about_area
     flex-direction: column
+    height: auto
+  .section-about .section-about_area .section-about_area_info
+    padding: 1em
+  img.section-about_area-photo
+    width: 100%
   .geo-cities .geo-cities_city
     padding: 1.4em 3em
   .map .map-contacts .map-contacts_title
@@ -242,3 +247,35 @@
     width: 100%
     border: 0
     letter-spacing: 1.5em
+  .contacts
+    padding: 1em
+  .contacts .contacts_city .contacts_city-name:before
+    content: none
+  .contacts .contacts_city .dots
+    display: none
+  .contacts .contacts_city .contacts_city-info-table
+    flex-wrap: wrap
+  .contacts .contacts_info
+    flex-wrap: wrap
+    .contacts_info-item
+      border-right: none
+      margin-bottom: 1em
+    .contacts_info-item:first-child
+      text-align: center
+      border-right: 1px solid #a3701c
+    .contacts_info-item:last-child
+      text-align: center
+  .geo-cities
+    justify-content: space-between
+    .geo-cities_city
+      flex-grow: 1
+      text-align: center
+      &:last-child
+        border-right: none
+  .map .map-contacts, .map .map-geo
+    height: 100%
+  .map .map-geo
+    height: 500px
+  .section-about_map.map
+    display: flex
+    height: auto

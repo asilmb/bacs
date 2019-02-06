@@ -162,8 +162,11 @@
   .catalog-views .views_navigator .views_navigator_selector
     margin: 0 0
 @media only screen and (min-width: 320px) and (max-width: 768px)
+  .section-catalog
+    height: auto
+    padding-bottom: 2em
   .catalog-views .views_navigator
-    display: none
+    flex-wrap: wrap
   .catalog-view
    padding-top: 5em
   .owl-nav
@@ -177,3 +180,14 @@
   .catalog-views .catalog-views_title
     letter-spacing: 1.5em
     font-size: 1.2em
+  .catalog-views .views_navigator .views_navigator_selector:before
+    width: 36px
+    height: 36px
+    bottom: 10px
+  .catalog-views .views_navigator .views_navigator_selector
+    font-size: 1.4em
+    width: 90%
+    margin: 0 5%
+    padding-top: 5px
+  .catalog-views .views_navigator .views_navigator_selector:last-child
+    width: 90%
