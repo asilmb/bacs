@@ -225,6 +225,12 @@ $(document).ready(function () {
         $(".custom-catalog").removeClass("active");
         $(".custom-catalog.catalog-travel").addClass('active')
     }
-    ;
+
+
+    $('.menu__icon').on('click', function () {
+        $(this).closest('.navigation-vertical-left').toggleClass('menu_state_open');
+
+    });
+
 
 });

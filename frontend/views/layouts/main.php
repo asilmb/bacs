@@ -41,7 +41,8 @@ AppAsset::register($this);
         </div>
         <div class="menu-section_menu-item travel"><a href="#collection">
                 <p>Путешествия</p>
-            </a></div>
+            </a>
+        </div>
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section menu-section--main-links">
         <div class="menu-section_menu-item"> <a href="#section-stock">Акции</a></div>
@@ -52,6 +53,11 @@ AppAsset::register($this);
         <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item gov">Госзакуп</a></div>
         <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item provider">Поставщикам</a></div>
         <div class="menu-section_menu-item"><a href="#to-custumers" class="menu-section_menu-item renter">Арендаторам</a></div>
+    </div>
+    <div class="navigation-vertical_social social-section">
+        <a href="#" class='social-section-item facebook' target="_blank"></a>
+        <a href="https://www.instagram.com/baks_accessories" class='social-section-item inst' target="_blank"></a>
+        <a href="https://vk.com/club88806084" class='social-section-item vk' target="_blank"></a>
     </div>
     <div class="navigation-vertical_logo_menu-section menu-section-page-info">
         <div class="menu-section-pagination">
